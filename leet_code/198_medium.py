@@ -18,24 +18,33 @@ from typing import List
 #         return max(self.solve(nums, 0, memory), self.solve(nums, 1, memory))
 
 
+# class Solution:
+
+#     def rob(self, nums: List[int]) -> int:
+#         memory = {}
+
+#         def solve(i):
+#             if i >= len(nums):
+#                 return 0
+#             if i not in memory:
+#                 # Значение для текущего выбираем не как текущий плюс один из
+#                 # следующих, а как либо текущий и +2, либо вместо идёт просто
+#                 # сосед
+#                 # В итоге та же сетка, где может быть как через 1 или 2,
+#                 # но решение принимает не solve(i), а solve(i + 1)
+#                 memory[i] = max(solve(i + 1), nums[i] + solve(i + 2))
+#             return memory[i]
+#         solve(0)
+#         return memory[0]
+    
 class Solution:
-
     def rob(self, nums: List[int]) -> int:
-        memory = {}
-
-        def solve(i):
-            if i >= len(nums):
-                return 0
-            if i not in memory:
-                # Значение для текущего выбираем не как текущий плюс один из
-                # следующих, а как либо текущий и +2, либо вместо идёт просто
-                # сосед
-                # В итоге та же сетка, где может быть как через 1 или 2,
-                # но решение принимает не solve(i), а solve(i + 1)
-                memory[i] = max(solve(i + 1), nums[i] + solve(i + 2))
-            return memory[i]
-        solve(0)
-        return memory[0]
+        rob1, rob2 = 0, 0
+        for n in nums:
+            new_rob = max(rob1 + n, rob2)
+            rob1 = rob2
+            rob2 = new_rob
+        return rob2
 
 
 sol = Solution()
@@ -44,7 +53,7 @@ tests = [
     ([2, 7, 9, 3, 1], 12),
     ([5, 1, 6, 4, 2, 6, 1, 2, 8, 9], 28),
     ([3, 6, 6, 4, 9, 1], 18),
-    ([94, 23, 33, 98, 39, 3, 46, 54, 27, 71, 12, 41, 64, 14, 82], 466),
+    ([94, 23, 33, 150, 39, 3, 46, 54, 27, 71, 12, 41, 64, 14, 82], 518),
     ([82, 94, 23, 1], 105),
     ([200, 275, 7, 305, 146, 9, 86, 371, 104, 192, 69, 254, 236, 143, 271, 238,
       202, 356, 274, 196, 157, 165, 375, 29, 89, 160, 130, 197, 390, 52, 151,
