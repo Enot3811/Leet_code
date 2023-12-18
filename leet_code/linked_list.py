@@ -101,6 +101,30 @@ class LinkedList:
         self.length -= 1
         return popped_val
     
+    @classmethod
+    def from_list_nodes(cls, list_head: ListNode) -> 'LinkedList':
+        """Create a `LinkedList` from given list nodes.
+
+        Parameters
+        ----------
+        list_head : ListNode
+            A head of the given list nodes.
+
+        Returns
+        -------
+        LinkedList
+            The created `LinkedList`.
+        """
+        obj = cls()
+        obj.head = list_head
+        node = list_head
+        length = 1
+        while node.next != None:
+            node = node.next
+            length += 1
+        obj.tail = node
+        obj.length = length
+        return obj
 
 if __name__ == '__main__':
     l = LinkedList(range(5))
