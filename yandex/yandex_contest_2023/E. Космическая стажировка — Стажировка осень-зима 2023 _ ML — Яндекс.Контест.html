@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://contest.yandex.ru/contest/50289/problems/E/ -->
+<html class="i-ua_js_yes i-ua_css_standard i-ua_svg_yes i-ua_inlinesvg_yes i-ua_placeholder_yes" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>E. Космическая стажировка — Стажировка осень-зима 2023 | ML — Яндекс.Контест</title><link rel="shortcut icon" href="https://contest.yandex.ru/favicon.ico?1702132020574"><script nonce="">;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);;(function(d,e,c,n,w,v,f){e=d.documentElement;c="className";n="createElementNS";f="firstChild";w="http://www.w3.org/2000/svg";e[c]+=" i-ua_svg_"+(!!d[n]&&!!d[n](w,"svg").createSVGRect?"yes":"no");v=d.createElement("div");v.innerHTML="<svg/>";e[c]+=" i-ua_inlinesvg_"+((v[f]&&v[f].namespaceURI)==w?"yes":"no");})(document);;(function(d,e,p){e=d.documentElement;p="placeholder";e.className+=" i-ua_"+p+(p in d.createElement("input")?"_yes":"_no")})(document);</script><link rel="stylesheet" href="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/highlighter.css"><link rel="stylesheet" href="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/_problems.css"><!--[if IE 6]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.196.0-9c30a39ba0/bundles/problems/_problems.ie6.css"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.196.0-9c30a39ba0/bundles/problems/_problems.ie7.css"/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.196.0-9c30a39ba0/bundles/problems/_problems.ie8.css"/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.196.0-9c30a39ba0/bundles/problems/_problems.ie9.css"/><![endif]--><link rel="stylesheet" href="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/_problems.print.css" media="print"><script src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/jquery.min.js" nonce=""></script><script src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/_problems.ru.js" nonce=""></script><meta name="description" content="Яндекс.Контест это сервис, позволяющий программистам со всего мира соревноваться на предложенных задачах, а преподавателям и авторам задач -- размещать задания и серии заданий и предоставлять доступ пользователям через интернет."><meta name="viewport" content="width=device-width, initial-scale=1"><script nonce="">!function(n,i){if(n.Ya=n.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var e=n.performance,t=e&&e.timing&&e.timing.navigationStart||Ya.startPageLoad||+new Date,a=n.requestAnimationFrame,r=Ya.Rum={enabled:!!e,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(n,i){r._settings=n,r._vars=i},getTime:e&&e.now?function(){return e.now()}:Date.now?function(){return Date.now()-t}:function(){return new Date-t},time:function(n){r._deltaMarks[n]=[r.getTime()]},timeEnd:function(n,i){var e=r._deltaMarks[n];e&&0!==e.length&&e.push(r.getTime(),i)},sendTimeMark:function(n,i,e,t){void 0===i&&(i=r.getTime()),r._defTimes.push([n,i,t]),r.mark(n,i)},sendDelta:function(n,i,e,t){var a,s=r._deltaMarks;s[n]||void 0===i||(a=t&&t.originalEndTime?t.originalEndTime:r.getTime(),s[n]=[a-i,a,e])},sendResTiming:function(n,i){r._defRes.push([n,i])},sendRaf:function(n){var i=r.getSetting("forcePaintTimeSending");if(a&&(i||!r.isVisibilityChanged())){var e="2616."+n;a((function(){!i&&r.isVisibilityChanged()||(r.getSetting("sendFirstRaf")&&r.sendTimeMark(e+".205"),a((function(){!i&&r.isVisibilityChanged()||r.sendTimeMark(e+".1928")})))}))}},isVisibilityChanged:function(){return r.vsStart&&("visible"!==r.vsStart||r.vsChanged)},mark:e&&e.mark?function(n,i){e.mark(n+(i?": "+i:""))}:function(){},getSetting:function(n){var i=r._settings[n];return null===i?null:i||""},on:function(n,i){if("function"==typeof i)return(r._markListeners[n]=r._markListeners[n]||[]).push(i),function(){if(r._markListeners[n]){var e=r._markListeners[n].indexOf(i);e>-1&&r._markListeners[n].splice(e,1)}}},sendTrafficData:function(){},finalizeLayoutShiftScore:function(){},finalizeLargestContentfulPaint:function(){},getLCPAdditionalParams:function(){}};document.addEventListener&&document.addEventListener("visibilitychange",(function n(){Ya.Rum.vsChanged=!0,document.removeEventListener("visibilitychange",n)}))}(window);
+
+!function(){if(window.PerformanceLongTaskTiming){var e=function(e,n){return(e=e.concat(n)).length>300&&(e=e.slice(e.length-300)),e};function n(){var n=Ya.Rum._tti={events:[],eventsAfterTTI:[],fired:!1,observer:new PerformanceObserver((function(r){var t=r.getEntries();n.events=e(n.events,t),n.fired&&(n.eventsAfterTTI=e(n.eventsAfterTTI,t))}))};n.observer.observe({entryTypes:["longtask"]}),Ya.Rum._unsubscribers&&Ya.Rum._unsubscribers.push((function(){n.observer.disconnect()}))}n(),Ya.Rum._onInit&&Ya.Rum._onInit.push(n)}}();
+
+Ya.Rum.observeDOMNode=window.IntersectionObserver?function(e,i,n){var t=this,o=Ya.Rum.getSetting("forcePaintTimeSending");!function r(){if(o||!t.isVisibilityChanged()){var s="string"==typeof i?document.querySelector(i):i;s?new IntersectionObserver((function(i,n){!o&&t.isVisibilityChanged()||(Ya.Rum.sendTimeMark(e),n.unobserve(s))}),n).observe(s):setTimeout(r,100)}}()}:function(){};
+
+!function(){var e,n,t,i=Ya.Rum,o=[];function s(){var t=o.join("\r\n");o=[],e=null,n&&a(n,t)}function a(e,n){if(!(navigator.sendBeacon&&t&&navigator.sendBeacon(e,n))){var i=new XMLHttpRequest;i.open("POST",e),i.send(n)}}function g(t,c,r,u,l,v,d,f,j,m){var p=[t?"/reqid="+t:"",c?"/"+c.join("/"):"",r?"/path="+r:"",u?"/events="+u:"",l?"/slots="+l.join(";"):"",v?"/experiments="+v.join(";"):"",d?"/vars="+d:"","/cts="+(new Date).getTime(),j||"","/*"+(f||"")];m&&m!==n?a(m,p.join("")):(o.push(p.join("")),o.length<42?e=setTimeout(s,15):s(),i.sendToClck=g)}i.send=function(o,s,a,c,r,u,l){clearTimeout(e),n=i.getSetting("clck"),t=i.getSetting("beacon"),g(i.getSetting("reqid"),l,s,r,i.getSetting("slots"),i.getSetting("experiments"),a)}}();
+
+!function(){var n=Ya.Rum,i=window.BEM;function t(){i&&i.channel("i-bem").onFirst("start-init",(function(){n.getSetting("sendBeforeBemInited")&&n.sendTimeMark("2418")})).onFirst("init",(function(){n.sendTimeMark("2295")}))}t(),n._onInit&&n._onInit.push(t)}();
+
+Ya.Rum.init({"beacon":true,"clck":"https://yandex.ru/clck/click","reqid":"yvTiOBeD"}, {"-page":"unknown","-platform":"desktop","-env":"production","rum_id":"ru.contest-www","-project":"contest-www"});
+!function(e,n){if(!e)throw new Error("Rum: interface is not included");if(!e.enabled)return e.getSetting=function(){return""},e.getVarsList=function(){return[]},void(e.getResourceTimings=e.pushConnectionTypeTo=e.pushTimingTo=e.normalize=e.sendCounter=e.sendDelta=e.sendTimeMark=e.sendResTiming=e.sendTiming=e.sendTTI=e.makeSubPage=e.sendHeroElement=e.onReady=e.onQuietWindow=function(){});e.getVarsList=function(){var n=e._vars;return Object.keys(n).map(function(e){return e+"="+encodeURIComponent(n[e]).replace(/\*/g,"%2A")})},e.setVars=function(n){Object.keys(n).forEach(function(t){e._vars[t]=n[t]}),M(),I()};var t,i,r="690.1033",o="690.2096.207",a="690.2096.2877",s="690.2096.2892",c="690.2096.2044",u="690.2096.361",d="690.2096.4004",f=3,l=3e3,v={connectEnd:2116,connectStart:2114,decodedBodySize:2886,domComplete:2124,domContentLoadedEventEnd:2131,domContentLoadedEventStart:2123,domInteractive:2770,domLoading:2769,domainLookupEnd:2113,domainLookupStart:2112,duration:2136,encodedBodySize:2887,entryType:2888,fetchStart:2111,initiatorType:2889,loadEventEnd:2126,loadEventStart:2125,nextHopProtocol:2890,redirectCount:1385,redirectEnd:2110,redirectStart:2109,requestStart:2117,responseEnd:2120,responseStart:2119,secureConnectionStart:2115,startTime:2322,transferSize:2323,type:76,unloadEventEnd:2128,unloadEventStart:2127,workerStart:2137},g={visible:1,hidden:2,prerender:3},m={bluetooth:2064,cellular:2065,ethernet:2066,none:1229,wifi:2067,wimax:2068,other:861,unknown:836,0:836,1:2066,2:2067,3:2070,4:2071,5:2768},p={"first-paint":2793,"first-contentful-paint":2794},h=Object.keys(p).length,y=e.getTime,T=window.PerformanceObserver,E=window.performance||{},S=E.timing||{},b=E.navigation||{},C=navigator.connection,k={},L={},w=e._deltaMarks,R=document.createElement("link"),j=document.createElement("a"),x="function"==typeof E.getEntriesByType,_=S.navigationStart;function M(){t=e.getVarsList(),e.getSetting("sendClientUa")&&t.push("1042="+encodeURIComponent(navigator.userAgent))}function I(){i=t.concat(["143.2129="+_])}function O(e){function n(){removeEventListener("DOMContentLoaded",n),removeEventListener("load",n),e()}"loading"===document.readyState?(addEventListener("DOMContentLoaded",n),addEventListener("load",n)):e()}function z(){var n;e.getSetting("disableOnLoadTasks")||(removeEventListener("load",z),(n=e.getSetting("periodicStatsIntervalMs"))||null===n||(n=15e3),n&&(V=setInterval(Q,n)),addEventListener("beforeunload",Q),function(){if(T){q(E.getEntriesByType("navigation")),q(E.getEntriesByType("resource"));try{new T(function(e){q(e.getEntries())}).observe({entryTypes:["resource","navigation"]})}catch(e){}e._periodicTasks.push(J)}}(),function(){if(T)try{new T(function(e,n){var t=e.getEntries()[0];if(t){var i=t.processingStart,r={duration:t.duration,js:t.processingEnd-i,name:t.name};t.target&&(r.target=K(t.target)),A("first-input",i-t.startTime,r),n.disconnect()}}).observe({type:"first-input",buffered:!0})}catch(e){}}(),function(){if(x){var e=E.getEntriesByType("navigation")[0];if(e){var n=[];me(n,e),fe(n);var i=E.getEntriesByName("yndxNavigationSource")[0];i&&n.push("2091.186="+i.value),he(s,t.concat(n))}}}(),function(){if(T){var n=e.getSetting("clsWindowGap")?e.getSetting("clsWindowGap"):1/0,t=e.getSetting("clsWindowSize")?e.getSetting("clsWindowSize"):1/0,i=new T(function(e){var i=e.getEntries();null==$&&($=0);for(var r=0;r<i.length;r++){var o=i[r];o.hadRecentInput||(Z&&o.startTime-X[X.length-1].startTime<n&&o.startTime-X[0].startTime<t?(Z+=o.value,X.push(o)):(ne(),Z=o.value,X=[o]))}ne()});try{i.observe({type:"layout-shift",buffered:!0})}catch(e){}addEventListener("visibilitychange",function e(){if("hidden"===document.visibilityState){removeEventListener("visibilitychange",e);try{"function"==typeof i.takeRecords&&i.takeRecords(),i.disconnect()}catch(e){}te()}}),addEventListener("beforeunload",te)}}(),function(){if(T&&(e.getSetting("forcePaintTimeSending")||!e.isVisibilityChanged())){var n=new T(function(e){for(var n=e.getEntries(),t=0;t<n.length;t++){var i=n[t];ie=i.renderTime||i.loadTime,re=i}oe||(U("largest-loading-elem-paint",ie),oe=!0)});try{n.observe({type:"largest-contentful-paint",buffered:!0})}catch(e){}addEventListener("visibilitychange",function e(){if("hidden"===document.visibilityState){removeEventListener("visibilitychange",e);try{"function"==typeof n.takeRecords&&n.takeRecords(),n.disconnect()}catch(e){}ae()}}),addEventListener("beforeunload",ae)}}())}function B(){var n=S.domContentLoadedEventStart,i=S.domContentLoadedEventEnd;if(0!==n||0!==i){var o=0===S.responseStart?_:S.responseStart,a=0===S.domainLookupStart?_:S.domainLookupStart,s=t.concat(["2129="+_,"1036="+(a-_),"1037="+(S.domainLookupEnd-S.domainLookupStart),"1038="+(S.connectEnd-S.connectStart),S.secureConnectionStart&&"1383="+(S.connectEnd-S.secureConnectionStart),"1039="+(S.responseStart-S.connectEnd),"1040="+(S.responseEnd-o),"1040.906="+(S.responseEnd-a),"1310.2084="+(S.domLoading-o),"1310.2085="+(S.domInteractive-o),"1310.1309="+(i-n),"1310.1007="+(n-o),navigator.deviceMemory&&"3140="+navigator.deviceMemory,navigator.hardwareConcurrency&&"3141="+navigator.hardwareConcurrency]);Object.keys(v).forEach(function(e){e in S&&S[e]&&s.push(v[e]+"="+pe(S[e],_))}),e.vsStart?(s.push("1484="+(g[e.vsStart]||2771)),e.vsChanged&&s.push("1484.719=1")):s.push("1484="+g.visible),b&&(b.redirectCount&&s.push("1384.1385="+b.redirectCount),1!==b.type&&2!==b.type||s.push("770.76="+b.type)),fe(s),he(r,s)}else setTimeout(B,50)}M(),I(),e.ajaxStart=0,e.ajaxComplete=0,O(function(){_&&setTimeout(function(){e.sendTimeMark=U,e.sendResTiming=H,e.sendTiming=G,e.timeEnd=D;for(var n=e._defRes;n.length;){var t=n.shift();H(t[0],t[1])}for(var i=e._defTimes;i.length;){var r=i.shift();U(r[0],r[1],!1,r[2])}Object.keys(w).forEach(function(e){A(e)}),B(),function n(){if(x&&(e.getSetting("forcePaintTimeSending")||!e.isVisibilityChanged())){for(var t=E.getEntriesByType("paint"),i=0;i<t.length;i++){var r=t[i],o=p[r.name];o&&!P[r.name]&&(P[r.name]=!0,N++,U("1926."+o,r.startTime))}if(N<h)try{new T(function(e,t){n(),t&&t.disconnect()}).observe({entryTypes:["paint"]})}catch(e){}}}(),e.getSetting("sendAutoElementTiming")&&se(),window.addEventListener("pageshow",ce),ue(),"complete"===document.readyState?z():addEventListener("load",z)},0)}),e._getCommonVars=function(){return t};var V,P={},N=0;function U(t,i,r,a){i===n&&(i=y()),r!==n&&!0!==r||e.mark(t,i);var s=ge(t);if(s.push("207="+pe(i)),W(s,a)){he(o,s),k[t]=k[t]||[],k[t].push(i);var c=e._markListeners[t];c&&c.length&&c.forEach(function(e){e(i)})}}function W(e,t){if(t){if(t.isCanceled&&t.isCanceled())return!1;var i=e.reduce(function(e,n,t){return"string"==typeof n&&(e[n.split("=")[0]]=t),e},{});Object.keys(t).forEach(function(r){if("function"!=typeof t[r]){var o=i[r],a=r+"="+t[r];o===n?e.push(a):e[o]=a}})}return!0}function D(e,n){var t=w[e];t&&0!==t.length&&(t.push(y(),n),A(e))}function A(t,i,r,o){var s,c,u,d=w[t];if(void 0!==i?s=(c=o&&o.originalEndTime?o.originalEndTime:e.getTime())-i:d&&(s=d[0],c=d[1],u=d[2]),s!==n&&c!==n){var f=ge(t);f.push("207.2154="+pe(s),"207.1428="+pe(c),"2877="+pe(c-s)),W(f,r)&&W(f,u)&&(he(a,f),delete w[t])}}function H(e,n){le(n,function(t){t&&G(e,t[t.length-1],n)})}function G(n,t,i){var r=ge(n);e.getSetting("sendUrlInResTiming")&&r.push("13="+encodeURIComponent(i)),me(r,t),he(c,r)}function Q(){var n=!1;e._periodicTasks.forEach(function(e){e()&&(n=!0)}),n||clearInterval(V)}e.getTimeMarks=function(){return k},e._periodicTasks=[];var Y=0;function q(e){if(e&&e.length)for(var n=L,t=0;t<e.length;t++){var i=F(e[t]);if(i){var r=i.domain+"-"+i.extension,o=n[r]=n[r]||{count:0,size:0};o.count++,o.size+=i.size}}}function F(e){var n=e.transferSize;if(null!=n){j.href=e.name;var t=j.pathname;if(0!==t.indexOf("/clck")){var i=t.lastIndexOf("."),r="";return-1!==i&&t.lastIndexOf("/")<i&&t.length-i<=5&&(r=t.slice(i+1)),{size:n,domain:j.hostname,extension:r}}}}function J(){var n=e.getSetting("maxTrafficCounters")||250;if(Y>=n)return!1;for(var i=Object.keys(L),r="",o=0;o<i.length;o++){var a=i[o],s=L[a];r+=encodeURIComponent(a)+"!"+s.count+"!"+s.size+";"}if(r.length){Y++;var c=t.concat(["d="+r,"t="+pe(y())]);he(u,c)}return L={},Y<n}function K(e){if(!e)return"";var t=(e.tagName||"").toLowerCase(),i=e.className&&e.className.baseVal!==n?e.className.baseVal:e.className;return t+(i?(" "+i).replace(/\s+/g,"."):"")}var X,Z,$=("layout-shift",Boolean(T&&T.supportedEntryTypes&&-1!==T.supportedEntryTypes.indexOf("layout-shift"))?0:null),ee=null;function ne(){Z>$&&($=Z,ee=X)}function te(){if(null!=$){var i=["s="+Math.round(1e6*$)/1e6];if(e.getSetting("logClsTarget")){var r=function(e){var n=null;if(!e)return null;var t=null;return(n=e.reduce(function(e,n){return e&&e.value>n.value?e:n}))&&n.sources&&n.sources.length&&(t=n.sources.find(function(e){return e.node&&1===e.node.nodeType})||n.sources[0]),t&&K(t.node)}(ee);i.push("target="+r)}he(d,t.concat(i)),$=null,Z=n,X=n}}var ie=null,re=null,oe=!1;function ae(){if(null!=ie){var n=e.getLCPAdditionalParams(re);U("largest-contentful-paint",ie,!1,n),ie=null,re=null}}var se=T?function(){if(e.getSetting("forcePaintTimeSending")||!e.isVisibilityChanged())try{new T(function(e){for(var n=e.getEntries(),t=0;t<n.length;t++){var i=n[t];U("element-timing."+i.identifier,i.startTime)}}).observe({type:"element",buffered:!0})}catch(e){}}:function(){};function ce(e){e.persisted&&U("bfcache")}function ue(n,t,i){if(e._tti){var r=y();de(function(o){var a={2796.2797:ve(e._tti.events||[],t),689.2322:pe(r)};i&&Object.keys(i).forEach(function(e){a[e]=i[e]}),U(n||"2795",o,!0,a),e._tti.fired=!0},t)}}function de(n,t){e._tti&&(t||(t=y()),function i(){var r,o=t,a=y(),s=e._tti.events||[],c=s.length;0!==c&&(r=s[c-1],o=Math.max(o,Math.floor(r.startTime+r.duration))),a-o>=l?n(o):setTimeout(i,1e3)}())}function fe(e){C&&e.push("2437="+(m[C.type]||2771),C.downlinkMax!==n&&"2439="+C.downlinkMax,C.effectiveType&&"2870="+C.effectiveType,C.rtt!==n&&"rtt="+C.rtt,C.downlink!==n&&"dwl="+C.downlink)}function le(e,n){if(!x)return n(null);R.href=e;var t=R.href,i=0,r=100;setTimeout(function e(){var o=E.getEntriesByName(t);if(o.length)return n(o);i++<f?(setTimeout(e,r),r+=r):n(null)},0)}function ve(e,n){return e=e||[],n=n||0,e.filter(function(e){return e.startTime-n>=-50}).map(function(e){var n=e.name?e.name.split("-").map(function(e){return e[0]}).join(""):"u",t=Math.floor(e.startTime);return n+"-"+t+"-"+Math.floor(t+e.duration)}).join(".")}function ge(n){return i.concat(["1701="+n,e.ajaxStart&&"1201.2154="+pe(e.ajaxStart),e.ajaxComplete&&"1201.2052="+pe(e.ajaxComplete)])}function me(e,n){Object.keys(v).forEach(function(t){if(t in n){var i=n[t];(i||0===i)&&e.push(v[t]+"="+pe(i))}})}function pe(e,n){return"string"==typeof e?encodeURIComponent(e):Math.round(1e3*(e-(n||0)))/1e3}function he(n,t){var i=encodeURIComponent(window.YaStaticRegion||"unknown");t.push("-cdn="+i);var r=t.filter(Boolean).join(",");e.send(null,n,r)}e.sendTTI=ue,e.sendHeroElement=function(e){U("2876",e)},e._subpages={},e.makeSubPage=function(n,t){var i=e._subpages[n];e._subpages[n]=void 0===i?i=0:++i;var r=!1;return{689.2322:pe(void 0!==t?t:y()),2924:n,2925:i,isCanceled:function(){return r},cancel:function(){r=!0}}},e._getLongtasksStringValue=ve,e.getResourceTimings=le,e.pushConnectionTypeTo=fe,e.pushTimingTo=me,e.normalize=pe,e.sendCounter=he,e.sendDelta=A,e.sendTrafficData=J,e.finalizeLayoutShiftScore=te,e.finalizeLargestContentfulPaint=ae,e.onReady=O,e.onQuietWindow=de,e.getSelector=K,e.sendBFCacheTimeMark=ce}(Ya.Rum);
+</script><link rel="stylesheet" href="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/katex.min.css"><script nonce="">window.MathJax = { AssistiveMML: { disabled: true }, showMathMenu: false };</script><script src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/MathJax.js" nonce=""></script><script src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/highlighter.js" nonce=""></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script type="text/javascript" async="async" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/watch.js"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+</style><style type="text/css">.vue-slider-dot{position:absolute;-webkit-transition:all 0s;transition:all 0s;z-index:5}.vue-slider-dot:focus{outline:none}.vue-slider-dot-tooltip{position:absolute;visibility:hidden}.vue-slider-dot-hover:hover .vue-slider-dot-tooltip,.vue-slider-dot-tooltip-show{visibility:visible}.vue-slider-dot-tooltip-top{top:-10px;left:50%;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}.vue-slider-dot-tooltip-bottom{bottom:-10px;left:50%;-webkit-transform:translate(-50%,100%);transform:translate(-50%,100%)}.vue-slider-dot-tooltip-left{left:-10px;top:50%;-webkit-transform:translate(-100%,-50%);transform:translate(-100%,-50%)}.vue-slider-dot-tooltip-right{right:-10px;top:50%;-webkit-transform:translate(100%,-50%);transform:translate(100%,-50%)}</style><style type="text/css">.vue-slider-marks{position:relative;width:100%;height:100%}.vue-slider-mark{position:absolute;z-index:1}.vue-slider-ltr .vue-slider-mark,.vue-slider-rtl .vue-slider-mark{width:0;height:100%;top:50%}.vue-slider-ltr .vue-slider-mark-step,.vue-slider-rtl .vue-slider-mark-step{top:0}.vue-slider-ltr .vue-slider-mark-label,.vue-slider-rtl .vue-slider-mark-label{top:100%;margin-top:10px}.vue-slider-ltr .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ltr .vue-slider-mark-step{left:0}.vue-slider-ltr .vue-slider-mark-label{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.vue-slider-rtl .vue-slider-mark{-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%)}.vue-slider-rtl .vue-slider-mark-step{right:0}.vue-slider-rtl .vue-slider-mark-label{right:50%;-webkit-transform:translateX(50%);transform:translateX(50%)}.vue-slider-btt .vue-slider-mark,.vue-slider-ttb .vue-slider-mark{width:100%;height:0;left:50%}.vue-slider-btt .vue-slider-mark-step,.vue-slider-ttb .vue-slider-mark-step{left:0}.vue-slider-btt .vue-slider-mark-label,.vue-slider-ttb .vue-slider-mark-label{left:100%;margin-left:10px}.vue-slider-btt .vue-slider-mark{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}.vue-slider-btt .vue-slider-mark-step{top:0}.vue-slider-btt .vue-slider-mark-label{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-ttb .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ttb .vue-slider-mark-step{bottom:0}.vue-slider-ttb .vue-slider-mark-label{bottom:50%;-webkit-transform:translateY(50%);transform:translateY(50%)}.vue-slider-mark-label,.vue-slider-mark-step{position:absolute}</style><style type="text/css">.vue-slider{position:relative;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:block;-webkit-tap-highlight-color:rgba(0,0,0,0)}.vue-slider-rail{position:relative;width:100%;height:100%;-webkit-transition-property:width,height,left,right,top,bottom;transition-property:width,height,left,right,top,bottom}.vue-slider-process{position:absolute;z-index:1}</style><style>@import url("chrome-extension://adlpodnneegcnbophopdmhedicjbcgco/content/styles.css");</style></head><body class="b-page b-page__body i-global i-ua i-ua_interaction_yes page i-bem i-global_js_inited i-ua_platform_other i-ua_hi-dpi_yes i-ua_js_inited page_js_inited" data-bem="{&quot;i-global&quot;:{&quot;lang&quot;:&quot;ru&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;content-region&quot;:&quot;ru&quot;,&quot;click-host&quot;:&quot;//clck.yandex.ru&quot;,&quot;passport-host&quot;:&quot;https://passport.yandex.ru&quot;,&quot;pass-host&quot;:&quot;pass.yandex.ru&quot;,&quot;social-host&quot;:&quot;social.yandex.ru&quot;,&quot;export-host&quot;:&quot;https://export.yandex.ru&quot;,&quot;login&quot;:&quot;enot3811&quot;,&quot;lego-static-host&quot;:&quot;//yastatic.net/lego/2.10-142&quot;,&quot;id&quot;:&quot;contest&quot;,&quot;displayName&quot;:&quot;enot3811&quot;,&quot;yandexuid&quot;:&quot;3924589721681126791&quot;,&quot;social-retpath&quot;:&quot;https://contest.yandex.ru/i-social__closer.html&quot;,&quot;retpath&quot;:&quot;http://contest.yandex.ru/contest/50289/problems/E/&quot;,&quot;passport-msg&quot;:&quot;contest&quot;},&quot;i-ua&quot;:{},&quot;page&quot;:{}}" data-interaction="pointer"><div id="MathJax_Message" style="display: none;"></div><div class="page__head island"><div class="banners"></div><div class="header layout layout_type_serp i-bem header_js_inited" data-bem="{&quot;header&quot;:{}}" role="banner"><div class="header__main"><div class="layout__col layout__col_size_3 header__logo"><div class="logo2 logo2_lang_ru"><a class="logo2__yandex" href="https://www.ya.ru/"><div class="logo2__text">Яндекс</div></a><a class="logo2__service" href="https://contest.yandex.ru/"><div class="logo2__text">Контест</div></a></div></div><div class="layout__col header__nav"><div class="dropdown-menu dropdown-menu_theme_ffffff lang-switcher inline-block i-bem" data-bem="{&quot;dropdown-menu&quot;:{},&quot;lang-switcher&quot;:{&quot;tune&quot;:&quot;http://tune.yandex.ru&quot;}}"><span class="lang-switcher__lang lang-switcher__lang_selected_yes link link_pseudo_yes dropdown-menu__switcher i-bem" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup lang-switcher__popup-content dropdown-menu__popup"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><span class="lang-switcher__lang lang-switcher__lang_selected_yes"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><a class="lang-switcher__lang" data-bem="{&quot;lang-switcher__lang&quot;:{&quot;lang&quot;:&quot;en&quot;,&quot;url&quot;:&quot;http://contest.yandex.ru/contest/50289/problems/E/?lang=en&quot;}}" href="http://contest.yandex.ru/contest/50289/problems/E/?lang=en" role="button" tabindex="0"><div class="country-flag country-flag_s16_gb lang-switcher__flag"></div><span class="lang-switcher__lang-name">Английский</span></a></li><li class="b-menu-vert__layout-unit lang-switcher__all"><a class="link" href="http://tune.yandex.ru/lang/">Ещё</a></li></ul></div></div></div></div><div class="dropdown-menu dropdown-menu_user_yes dropdown-menu_theme_ffffff i-bem dropdown-menu_js_inited" data-bem="{&quot;dropdown-menu&quot;:{}}"><a class="user user_menu_yes user_contest_yes i-bem user_js_inited" data-bem="{&quot;user&quot;:{&quot;domikMods&quot;:{&quot;logo&quot;:&quot;ru&quot;},&quot;url&quot;:&quot;https://passport.yandex.ru/auth?origin=contest&amp;retpath=http://contest.yandex.ru/contest/50289/problems/E/&quot;}}" href="https://passport.yandex.ru/passport?mode=passport" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"><span class="user__name" data-bem="{&quot;user__name&quot;:{&quot;maxLength&quot;:16,&quot;maxLengthRelative&quot;:3,&quot;isUglyUserName&quot;:false}}"><span class="user__first-letter">e</span>not3811</span></a><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup popup popup_fade-out_no popup_watch-scroll_no dropdown-menu__popup dropdown-menu__popup_user_yes i-bem popup_js_inited" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:&quot;bottom-right&quot;}}"><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru/"><img class="image image_icon_mail" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""><span class="link__text user-menu-update i-bem user-menu-update_js_inited" data-bem="{&quot;user-menu-update&quot;:{}}">99+ новых писем</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru/compose">Написать письмо</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://disk.yandex.ru/?source=main-loginmenu"><img class="image image_icon_disk" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""><span class="link__text">Мой Диск</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item b-menu-vert__item_separator_yes" role="menuitem"></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="http://tune.yandex.ru/">Настройка</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://passport.yandex.ru/">Паспорт</a></div></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><div class="b-menu-vert__item" role="menuitem"><a class="link user user__logout i-bem user_js_inited" data-bem="{&quot;user&quot;:{&quot;_uniqId&quot;:&quot;user__logout&quot;}}" href="https://passport.yandex.ru/passport?mode=logout&amp;yu=3924589721681126791&amp;retpath=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F50289%2Fproblems%2FE%2F">Выйти</a></div></li></ul></div></div></div></div></div></div></div><ul class="tabs-menu tabs-menu_role_sections tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_type_stroked i-bem tabs-menu_js_inited" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><div class="tabs-menu__inner"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="https://contest.yandex.ru/contest/3/enter/">Пробный контест</a></li><li class="tabs-menu__tab"><a class="link" href="https://contest.yandex.ru/contest-list/">Архив соревнований</a></li><li class="tabs-menu__tab"><a class="link" href="https://contest.yandex.ru/compilers/">Настройки компиляторов</a></li><li class="tabs-menu__tab"><a class="link" href="https://contest.yandex.ru/errors/">Значения ошибок</a></li><li class="tabs-menu__tab"><a class="link" href="https://contest.yandex.ru/teams/">Команды</a></li></div></ul></div><div class="page__main page__sect"><div class="content content_theme_contest island"><div class="contest-head"><div class="contest-head__item contest-head__item_role_title"><a class="link" href="https://contest.yandex.ru/contest/50289/enter/?retPage=">Стажировка осень-зима 2023 | ML</a></div><div class="contest-head__item contest-head__item_role_status"><div class="status i-bem" data-bem="{&quot;status&quot;:{&quot;finishTime&quot;:1702135698000}}"><div class="status__props"><div class="status__prop"><div class="status__name inline-block"><img class="image image_type_clock" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""></div><div class="status__value inline-block"><time class="time-local i-bem time-local_js_inited" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1702132020296}}">9&nbsp;дек 2023, 17:27:00</time></div></div><div class="status__prop"><div class="status__name inline-block">старт:</div><div class="status__value inline-block"><time class="time-local i-bem time-local_js_inited" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1702117698000}}">9&nbsp;дек 2023, 13:28:18</time></div></div><div class="status__prop"><div class="status__name inline-block">финиш:</div><div class="status__value inline-block"><time class="time-local i-bem time-local_js_inited" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1702135698000}}">9&nbsp;дек 2023, 18:28:18</time></div></div><div class="status__prop"><div class="status__name inline-block">до финиша:</div><div class="status__value inline-block"><div class="countdown i-bem countdown_js_inited" data-bem="{&quot;countdown&quot;:{&quot;name&quot;:&quot;refresh-timer&quot;,&quot;duration&quot;:3677704}}">01:01:13</div></div></div></div><div class="status__props"><div class="snippet snippet_hidden_yes status__snippet i-bem snippet_js_inited" data-bem="{&quot;snippet&quot;:{}}" id=":hidden-info:hidden-status"><div class="snippet__content"><div class="snippet__props"><div class="status__prop"><div class="status__name inline-block">начало:</div><div class="status__value inline-block"><time class="time-local i-bem time-local_js_inited" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1687179305000}}">19&nbsp;июн 2023, 15:55:05</time></div></div><div class="status__prop"><div class="status__name inline-block">длительность:</div><div class="status__value inline-block">05:00:00</div></div></div></div></div><span class="link link_pseudo_yes link_role_hidden-info i-bem link_js_inited" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0" id=":hidden-status"><span class="link__inner">...</span></span></div></div></div><div class="contest-head__item contest-head__item_role_aside"><div class="aside i-bem aside_js_inited" data-bem="{&quot;aside&quot;:{&quot;sk&quot;:&quot;ub5e9c5ca6803a967550dade03d938659&quot;,&quot;contestId&quot;:&quot;50289&quot;}}"><button class="button button_theme_pseudo button_pseudo_yes button_disabled_yes button_role_clarifications button_size_s aside__button i-bem button_js_inited" data-bem="{&quot;button&quot;:{}}" role="button" type="button" disabled="disabled"><span class="button__text">Объявления жюри</span></button><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_role_message-box i-bem popup_js_inited" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;offset&quot;:{&quot;top&quot;:10}}}}"><i class="popup__tail"></i><div class="popup__content"><div class="popup__helper"></div></div></div><button class="button button_theme_pseudo button_disabled_no button_pseudo_yes button_role_end button_size_s aside__button i-bem button_js_inited" data-bem="{&quot;button&quot;:{}}" role="button" type="button"><span class="button__text">Завершить</span></button></div></div></div><ul class="tabs-menu tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_role_contest tabs-menu_type_stroked i-bem tabs-menu_js_inited" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes tabs-menu__tab_active_yes"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/">Задачи</a></li></ul><form class="problem problem_type_single problem_mode_one-button problem_contest-type_simple i-bem problem_js_inited" data-bem="{&quot;problem&quot;:{}}" action="https://contest.yandex.ru/contest/50289/submit/" method="POST" enctype="multipart/form-data"><fieldset class="problem__item"><div class="problem__statement text" data-bem="{&quot;problem__statement&quot;:{}}">
+<div class="problem-statement">
+   <div class="header">
+      <h1 class="title">E. Космическая стажировка</h1>
+      <table>
+         <tbody><tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>20&nbsp;секунд</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>64Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="1">test.csv</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="1">answers.csv</td>
+         </tr>
+      </tbody></table>
+   </div>
+   <h2></h2>
+   <div class="legend"> Вот и наступил ваш первый день на стажировке в космическом центре! Вас закинули на планету GREEN-N-55 на новейшем шатле,
+      посадили за огромный компьютер и вручили униформу. <!--l. 49-->
+      <p style="text-indent: 0em;">Ваш отдел занимается детекцией и классификацией космических кораблей. Коллеги уже сделали систему,
+      которая засекает их приближение и распознает параметры корабля. Вам осталось лишь обучить классификатор, который предсказывает
+      его класс с высокой точностью. <!--l. 51-->
+      </p><p style="text-indent: 0em;">В <a href="https://disk.yandex.ru/d/mitPi8xss4Q6Jg">папке</a> лежит обучающий датасет (train.csv),
+      и данные на которых нужно сделать предсказания (test.csv). <!--l. 53-->
+      </p><p style="text-indent: 0em;">Так как цена ошибки очень высока, accuracy вашей модели должно быть не меньше 94%. <!--l.
+      55-->
+      </p><p style="text-indent: 0em;">Вы должны загрузить в систему файл <span style="font-family: monospace;">answers.csv</span>,
+      в каждой строке которого содержится одно число — 1 или 0 в зависимости от вашего предсказания. <!--l. 57-->
+      </p><p style="text-indent: 0em;">Будет выведено - WA, если точность ниже 94% и OK, если выше. <!--l. 59-->
+      </p><p style="text-indent: 0em;"><span style="font-weight: bold;">При отправке решения используйте компилятор yandexdataschool!!!
+      </span></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      
+   </div>
+</div></div><a name="6866662/2023_07_16/LIwHRJQB6L"></a><div class="problem__messages"><div class="problem__available-message"></div></div><div class="problem__solution"><div class="solution solution_type_compiler-list i-bem solution_js_inited" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;6866662/2023_07_16/LIwHRJQB6L@compilerId&quot;,&quot;problemId&quot;:&quot;6866662/2023_07_16/LIwHRJQB6L&quot;,&quot;compilerId&quot;:&quot;mlblitz_python26_numpy&quot;,&quot;maxFileSize&quot;:262144,&quot;submissionTemplateUrl&quot;:&quot;/ajax/contest/50289/problem/submission/template&quot;,&quot;lastSubmissionUrl&quot;:&quot;/ajax/contest/50289/last-submission&quot;,&quot;validation&quot;:{},&quot;sourceCode&quot;:&quot;0\n1\n1\n0\n0\n1\n1\n1\n0\n1\n1\n1\n0\n0\n1\n1\n0\n0\n1\n1\n1\n1\n1\n1\n1\n0\n0\n0\n0\n1\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n0\n1\n1\n1\n0\n0\n1\n1\n1\n1\n0\n0\n1\n1\n1\n1\n1\n0\n0\n0\n0\n0\n1\n1\n1\n1\n0\n1\n0\n1\n0\n1\n0\n1\n0\n1\n0\n1\n1\n1\n1\n0\n1\n1\n1\n0\n1\n0\n0\n1\n0\n0\n1\n0\n0\n0\n1\n1\n0\n1\n1\n1\n0\n0\n1\n0\n1\n0\n1\n1\n1\n0\n1\n1\n1\n1\n0\n1\n0\n1\n1\n1\n1\n1\n0\n0\n1\n0\n1\n1\n0\n1\n1\n0\n0\n1\n0\n1\n1\n1\n0\n1\n0\n1\n0\n0\n1\n1\n1\n1\n1\n1\n0\n1\n0\n1\n1\n0\n0\n0\n0\n1\n0\n1\n0\n0\n0\n1\n1\n1\n0\n0\n1\n1\n0\n0\n1\n1\n0\n0\n0\n1\n1\n1\n1\n0\n1\n0\n1\n1\n1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n0\n1\n1\n0\n0\n1\n0\n1\n1\n0\n1\n0\n0\n1\n1\n1\n1\n1\n0\n0\n1\n1\n1\n1\n0\n1\n1\n1\n0\n0\n1\n1\n0\n1\n0\n0\n1\n1\n0\n1\n0\n1\n1\n1\n1\n0\n1\n1\n1\n1\n1\n1\n0\n1\n1\n0\n1\n0\n1\n1\n1\n0\n1\n1\n0\n0\n0\n1\n1\n1\n0\n1\n0\n1\n0\n1\n1\n1\n1\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n1\n1\n1\n1\n1\n0\n0\n1\n1\n0\n0\n1\n1\n1\n1\n1\n1\n1\n0\n0\n1\n1\n0\n1\n1\n1\n0\n1\n0\n1\n0\n0\n0\n0\n0\n1\n0\n1\n1\n0\n1\n1\n0\n1\n1\n1\n1\n1\n1\n1\n0\n1\n1\n0\n1\n1\n1\n1\n0\n1\n0\n1\n0\n1\n0\n1\n1\n0\n0\n0\n1\n0\n1\n1\n1\n0\n0\n1\n1\n0\n1\n0\n1\n1\n1\n1\n1\n0\n0\n1\n1\n0\n0\n0\n0\n0\n1\n0\n1\n0\n0\n1\n0\n0\n1\n1\n1\n1\n1\n0\n1\n0\n0\n1\n1\n0\n0\n1\n1\n1\n0\n0\n1\n1\n1\n1\n0\n1\n1\n1\n0\n1\n&quot;}}"><label class="solution__label" for="6866662/2023_07_16/LIwHRJQB6L@compilerId">Язык</label><span class="select select_size_s select_theme_normal select_role_compiler-list select_layout_fixed-l i-bem select_js_inited" data-bem="{&quot;select&quot;:{&quot;rows&quot;:8,&quot;live&quot;:true,&quot;selected&quot;:&quot;mlblitz_python26_numpy&quot;}}"><button class="button button_theme_normal button_arrow_down button_size_s select__button i-bem button_js_inited" data-bem="{&quot;button&quot;:{}}" role="listbox" type="button" aria-haspopup="true" aria-expanded="false"><span class="button__text">(make) yandexdataschool</span></button><select class="select__control" name="6866662/2023_07_16/LIwHRJQB6L@compilerId" id="uniq170202459382247534" tabindex="-1" aria-hidden="true" autocomplete="off" value="mlblitz_python26_numpy"><option class="select__option" value="mlblitz_python26_numpy" selected="selected">(make) yandexdataschool</option><option class="select__option" value="gcc7_3">GNU c++17 7.3</option><option class="select__option" value="gcc_cpp20">GNU GCC 13.1 C++20</option><option class="select__option" value="jdk17">Java 17 (Temurin JDK)</option><option class="select__option" value="python3_docker">Python 3.11.4</option><option class="select__option" value="python3_7_3">Python 3.7.3</option><option class="select__option" value="python3_7_ml_modules">Python 3.7.3 ML</option><option class="select__option" value="mlblitz">python3.6+numpy+pandas</option></select></span></div><div class="solution solution_type_group solution_selected_text i-bem solution_js_inited" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;6866662/2023_07_16/LIwHRJQB6L@solution&quot;,&quot;problemId&quot;:&quot;6866662/2023_07_16/LIwHRJQB6L&quot;,&quot;compilerId&quot;:&quot;mlblitz_python26_numpy&quot;,&quot;maxFileSize&quot;:262144,&quot;submissionTemplateUrl&quot;:&quot;/ajax/contest/50289/problem/submission/template&quot;,&quot;lastSubmissionUrl&quot;:&quot;/ajax/contest/50289/last-submission&quot;,&quot;sourceCode&quot;:&quot;0\n1\n1\n0\n0\n1\n1\n1\n0\n1\n1\n1\n0\n0\n1\n1\n0\n0\n1\n1\n1\n1\n1\n1\n1\n0\n0\n0\n0\n1\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n0\n1\n1\n1\n0\n0\n1\n1\n1\n1\n0\n0\n1\n1\n1\n1\n1\n0\n0\n0\n0\n0\n1\n1\n1\n1\n0\n1\n0\n1\n0\n1\n0\n1\n0\n1\n0\n1\n1\n1\n1\n0\n1\n1\n1\n0\n1\n0\n0\n1\n0\n0\n1\n0\n0\n0\n1\n1\n0\n1\n1\n1\n0\n0\n1\n0\n1\n0\n1\n1\n1\n0\n1\n1\n1\n1\n0\n1\n0\n1\n1\n1\n1\n1\n0\n0\n1\n0\n1\n1\n0\n1\n1\n0\n0\n1\n0\n1\n1\n1\n0\n1\n0\n1\n0\n0\n1\n1\n1\n1\n1\n1\n0\n1\n0\n1\n1\n0\n0\n0\n0\n1\n0\n1\n0\n0\n0\n1\n1\n1\n0\n0\n1\n1\n0\n0\n1\n1\n0\n0\n0\n1\n1\n1\n1\n0\n1\n0\n1\n1\n1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n0\n1\n1\n0\n0\n1\n0\n1\n1\n0\n1\n0\n0\n1\n1\n1\n1\n1\n0\n0\n1\n1\n1\n1\n0\n1\n1\n1\n0\n0\n1\n1\n0\n1\n0\n0\n1\n1\n0\n1\n0\n1\n1\n1\n1\n0\n1\n1\n1\n1\n1\n1\n0\n1\n1\n0\n1\n0\n1\n1\n1\n0\n1\n1\n0\n0\n0\n1\n1\n1\n0\n1\n0\n1\n0\n1\n1\n1\n1\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n1\n1\n1\n1\n1\n0\n0\n1\n1\n0\n0\n1\n1\n1\n1\n1\n1\n1\n0\n0\n1\n1\n0\n1\n1\n1\n0\n1\n0\n1\n0\n0\n0\n0\n0\n1\n0\n1\n1\n0\n1\n1\n0\n1\n1\n1\n1\n1\n1\n1\n0\n1\n1\n0\n1\n1\n1\n1\n0\n1\n0\n1\n0\n1\n0\n1\n1\n0\n0\n0\n1\n0\n1\n1\n1\n0\n0\n1\n1\n0\n1\n0\n1\n1\n1\n1\n1\n0\n0\n1\n1\n0\n0\n0\n0\n0\n1\n0\n1\n0\n0\n1\n0\n0\n1\n1\n1\n1\n1\n0\n1\n0\n0\n1\n1\n0\n0\n1\n1\n1\n0\n0\n1\n1\n1\n1\n0\n1\n1\n1\n0\n1\n&quot;}}"><div class="solution__field solution__field_role_switcher"><span class="radio-button radio-button_size_s radio-button_theme_normal i-bem radio-button_js_inited" data-bem="{&quot;radio-button&quot;:{&quot;live&quot;:false}}"><label class="radio-button__radio radio-button__radio_checked_yes radio-button__radio_pressed_yes radio-button__radio_side_left" for="uniq170202459382247535"><input class="radio-button__control" value="text" checked="checked" id="uniq170202459382247535" type="radio" name="6866662/2023_07_16/LIwHRJQB6L@solution"><span class="radio-button__text">Набрать здесь</span></label><label class="radio-button__radio radio-button__radio_side_right radio-button__radio_next-for-pressed_yes" for="uniq170202459382247536"><input class="radio-button__control" value="file" id="uniq170202459382247536" type="radio" name="6866662/2023_07_16/LIwHRJQB6L@solution"><span class="radio-button__text">Отправить файл</span></label></span></div><div class="solution__field solution__field_role_panes"><div class="solution__pane solution__pane_name_text solution__pane_selected_yes"><span class="input input_type_textarea input_size_s input_role_code-type-text input_theme_normal i-bem input_js_inited" data-bem="{&quot;input&quot;:{&quot;live&quot;:false}}"><span class="input__box"><textarea class="input__control" id="uniq170202459382247537" name="6866662/2023_07_16/LIwHRJQB6L@text" aria-labelledby="labeluniq170202459382247537 hintuniq170202459382247537" rows="8" cols="10" style="display: none;">0
+1
+1
+0
+0
+1
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+1
+1
+1
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+0
+1
+1
+0
+1
+1
+1
+0
+0
+1
+0
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+0
+0
+1
+0
+1
+1
+0
+1
+1
+0
+0
+1
+0
+1
+1
+1
+0
+1
+0
+1
+0
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+1
+1
+1
+0
+0
+1
+1
+0
+0
+1
+1
+0
+0
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+0
+1
+0
+1
+1
+0
+1
+0
+0
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+0
+1
+0
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+0
+1
+1
+1
+0
+1
+1
+0
+0
+0
+1
+1
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+0
+0
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+0
+1
+1
+1
+0
+1
+0
+1
+0
+0
+0
+0
+0
+1
+0
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+1
+0
+1
+0
+1
+1
+0
+0
+0
+1
+0
+1
+1
+1
+0
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+0
+0
+1
+1
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+0
+0
+1
+1
+0
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+</textarea><div class="CodeMirror cm-s-neat"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 36px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 32px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 5611px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 32px; min-width: 14.8281px; min-height: 5611px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div style="width: 50px; height: 50px; overflow-x: scroll;"></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 13px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">1</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">2</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">3</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">4</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">5</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">6</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">7</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">8</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">9</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">10</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">11</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">12</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">13</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">14</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">15</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">16</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">17</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">18</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">19</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">20</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">21</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">22</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">23</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">24</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">25</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">26</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">27</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">28</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">29</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">30</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">31</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">32</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">33</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">34</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">35</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">36</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">37</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">38</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">39</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">40</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">41</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">42</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">43</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">44</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">45</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">46</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">0</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">47</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -32px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">48</div></div><pre class=""><span style="padding-right: 0.1px;"><span class="cm-number">1</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 5611px;"></div><div class="CodeMirror-gutters" style="height: 5611px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 31px;"></div></div></div></div><span class="input__clear input__clear_visibility_visible" unselectable="on"></span></span></span></div><div class="solution__pane solution__pane_name_file"><span class="attach attach_theme_normal attach_size_s attach_disabled_yes attach_role_code-type-attach attach_for_contest i-bem attach_js_inited" data-bem="{&quot;attach&quot;:{&quot;live&quot;:false}}"><span class="button button_theme_normal button_size_s button_disabled_yes attach__button i-bem" data-bem="{&quot;button&quot;:{}}"><span class="button__text" id="textuniq170202459382247538" aria-hidden="true">Выбрать</span><input class="attach__control button__control" type="file" name="6866662/2023_07_16/LIwHRJQB6L@file" id="uniq170202459382247538" aria-labelledby="textuniq170202459382247538" disabled="disabled"></span><span class="attach__holder attach__holder_state_hidden attach__holder_file_unknown" aria-hidden="true"><img class="image attach__icon-file" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""><span class="attach__text">Файл не выбран</span><img class="image attach__reset attach__reset_visibility_visible" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""></span></span></div></div></div></div></fieldset><div class="problem__send"><input type="hidden" name="sk" value="ub5e9c5ca6803a967550dade03d938659"><input type="hidden" name="retpath" value="https://contest.yandex.ru/contest/50289/problems/E/#6866662/2023_07_16/LIwHRJQB6L"><button class="button button_theme_action button_size_s button_role_submit i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="submit"><span class="button__text">Отправить</span></button></div><div class="problem__attempts"><div class="msg msg_type_info"><img class="image msg__icon" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""><img class="image msg__icon" src="./E. Космическая стажировка — Стажировка осень-зима 2023 _ ML — Яндекс.Контест_files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="">осталось 99 попыток</div></div><div class="problem__problems-nav"><span class="problem__problems-nav-left"><a class="button button_theme_normal button_size_s i-bem" data-bem="{&quot;button&quot;:{}}" role="button" href="https://contest.yandex.ru/contest/50289/problems/D/"><span class="button__text">Предыдущая</span></a></span><span class="problem__problems-nav-right"></span></div></form><ul class="tabs-menu tabs-menu_theme_normal tabs-menu_layout_vert tabs-menu_size_m tabs-menu_role_problems inline-block i-bem tabs-menu_js_inited" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/A/"><span class="tabs-menu__tab-content-text">A. План</span></a><div class="solution-status solution-status_size_small solution-status_mood_success popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Полное решение"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/A/"></a><a class="link image image_type_success" href="https://contest.yandex.ru/contest/50289/run-report/102401868/"></a></div></li><li class="tabs-menu__tab"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/B/"><span class="tabs-menu__tab-content-text">B. Локализация котов</span></a><div class="solution-status solution-status_size_small solution-status_mood_success popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Полное решение"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/B/"></a><a class="link image image_type_success" href="https://contest.yandex.ru/contest/50289/run-report/102405054/"></a></div></li><li class="tabs-menu__tab"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/C/"><span class="tabs-menu__tab-content-text">C. Эволюция полиномов</span></a></li><li class="tabs-menu__tab"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/D/"><span class="tabs-menu__tab-content-text">D. Управление маркетплейсом</span></a><div class="solution-status solution-status_size_small popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Тестируется"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/D/"></a><a class="link" href="https://contest.yandex.ru/contest/50289/run-report/102421272/">?</a></div></li><li class="tabs-menu__tab tabs-menu__tab_active_yes"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/E/"><span class="tabs-menu__tab-content-text">E. Космическая стажировка</span></a><div class="solution-status solution-status_size_small solution-status_mood_fail popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Неверный ответ"><a class="link" href="https://contest.yandex.ru/contest/50289/problems/E/"></a><a class="link image image_type_fail" href="https://contest.yandex.ru/contest/50289/run-report/102414436/"></a></div></li></ul><div class="table__hook"><table class="table table_role_submits i-bem table_js_inited" data-bem="{&quot;table&quot;:{&quot;isHelloBoardContest&quot;:false,&quot;ajax&quot;:{&quot;noProblemsLinks&quot;:true},&quot;done&quot;:true}}"><thead class="table__head"><tr class="table__row"><th class="table__header">Время посылки</th><th class="table__header">ID</th><th class="table__header">Задача</th><th class="table__header">Компилятор</th><th class="table__header">Вердикт</th><th class="table__header">Тип посылки</th><th class="table__header">Время</th><th class="table__header">Память</th><th class="table__header">Тест</th><th class="table__header">Баллы</th><th class="table__header"></th></tr></thead><tbody class="table__body"><tr class="table__row"><td class="table__cell"><div class="table__data table__data_type_time"><time class="time-local i-bem time-local_js_inited" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1702126763000}}">9&nbsp;дек 2023, 15:59:23</time></div></td><td class="table__cell">102414436</td><td class="table__cell"><div class="table__data popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Космическая стажировка">E</div></td><td class="table__cell">(make) yandexdataschool</td><td class="table__cell"><div class="table__data table__data_mood_neg popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Неверный ответ"><a class="link" href="https://contest.yandex.ru/contest/50289/run-report/102414436/">WA</a></div></td><td class="table__cell">-</td><td class="table__cell"><div class="table__data table__data_type_time">1.329s</div></td><td class="table__cell"><div class="table__data table__data_type_time">58.34Mb</div></td><td class="table__cell">1</td><td class="table__cell">-</td><td class="table__cell"><div class="table__data"><a class="link" href="https://contest.yandex.ru/contest/50289/run-report/102414436/">отчёт</a></div></td></tr></tbody></table></div></div></div><div class="page__foot"><div class="footer clearfix" role="contentinfo"><div class="footer__column"><a class="link footer__link" href="https://yandex.ru/support/contest/index.html">Справка</a><a class="link footer__link" href="https://yandex.ru/support/contest/troubleshooting.xml?form1580-cntst_link=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F50289%2Fproblems%2FE%2F&amp;form1580-cntst_login=enot3811">Обратная связь</a><a class="link footer__link" href="https://yandex.ru/legal/contest_termsofuse/">Пользовательское соглашение</a></div><div class="footer__column footer__column_side_right"><div class="copyright">©&nbsp;2013–2023&nbsp;&nbsp;ООО «<a class="copyright__link footer__link" href="http://www.ya.ru/">Яндекс</a>»</div></div></div></div><i class="b-statcounter"><i class="b-statcounter__metrika b-statcounter__metrika_type_js i-bem b-statcounter__metrika_js_inited" data-bem="{&quot;b-statcounter__metrika&quot;:{&quot;id&quot;:16150693}}"><noscript><img alt="" src="//mc.yandex.ru/watch/16150693"/></noscript></i></i></body><div class="troywell-avia"><template shadowrootmode="open">
+        <style>@import url("chrome-extension://adlpodnneegcnbophopdmhedicjbcgco/content/styles.css");</style>
+        <div id="troywell-avia" data-v-app=""><div class="app"><div data-v-138a3c39=""><!----></div></div></div></template></div><div class="troywell-caa"><template shadowrootmode="open">
+    <style>
+    @import url("chrome-extension://adlpodnneegcnbophopdmhedicjbcgco/content/styles.css");
+    @import url("chrome-extension://adlpodnneegcnbophopdmhedicjbcgco/caa/styles.css");
+    </style>
+    <div id="troywell-caa" data-v-app=""><div class="content-app" data-v-9eaabcdc=""><!----></div></div></template></div></html>

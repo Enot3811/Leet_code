@@ -1,8 +1,8 @@
-'''
-Minimum Window Substring.
+"""Minimum Window Substring.
+
 Неправильно понял условие.
 Находит минимальную подстроку со всеми заданными символами в заданном порядке
-'''
+"""
 
 
 class Solution:
