@@ -1,4 +1,4 @@
-"""Minimum Number of Pushes to Type Word I."""
+"""Minimum Number of Pushes to Type Word II."""
 
 from collections import Counter
 
