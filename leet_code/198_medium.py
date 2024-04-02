@@ -30,44 +30,9 @@ Constraints:
 0 <= nums[i] <= 400
 """
 
-#TODO check 213
 
 from typing import List
 
-
-# class Solution:
-#     def solve(self, nums, i, memory):
-#         if i not in memory:
-#             next1 = self.solve(nums, i + 2, memory) if i + 2 < len(nums) else 0
-#             next2 = self.solve(nums, i + 3, memory) if i + 3 < len(nums) else 0
-#             memory[i] = nums[i] + max(next1, next2)
-#         return memory[i]
-
-#     def rob(self, nums: List[int]) -> int:
-#         memory = {}
-#         if len(nums) == 1:
-#             return nums[0]
-#         return max(self.solve(nums, 0, memory), self.solve(nums, 1, memory))
-
-
-# class Solution:
-
-#     def rob(self, nums: List[int]) -> int:
-#         memory = {}
-
-#         def solve(i):
-#             if i >= len(nums):
-#                 return 0
-#             if i not in memory:
-#                 # Значение для текущего выбираем не как текущий плюс один из
-#                 # следующих, а как либо текущий и +2, либо вместо идёт просто
-#                 # сосед
-#                 # В итоге та же сетка, где может быть как через 1 или 2,
-#                 # но решение принимает не solve(i), а solve(i + 1)
-#                 memory[i] = max(solve(i + 1), nums[i] + solve(i + 2))
-#             return memory[i]
-#         solve(0)
-#         return memory[0]
     
 class Solution:
     def rob(self, nums: List[int]) -> int:
