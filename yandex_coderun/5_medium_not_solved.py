@@ -57,12 +57,12 @@ def main(input_days):
     Возможное решение задачи "Вычислите сумму чисел в строке":
     print(sum(map(int, input().split())))
     """
-    n = int(input())
-    input_days = [int(input()) for _ in range(n)]
-    if n == 0:
-        print(0)
-        print(0, 0)
-        return
+    # n = int(input())
+    # input_days = [int(input()) for _ in range(n)]
+    # if n == 0:
+    #     print(0)
+    #     print(0, 0)
+    #     return
     results_table = [{} for _ in range(len(input_days))]
     # [
     #     с чем пришли: что вернула рекурсия с таким input
@@ -131,5 +131,10 @@ def solve_subtask(
 
 
 if __name__ == '__main__':
-    input_data = [10, 35, 101, 59, 60, 105, 44]
-    main(input_data)
+    test_cases = [
+        [10, 35, 101, 59, 60, 105, 44],
+        [10, 35, 40, 101, 59, 63],
+    ]
+    for test_case in test_cases:
+        main(test_case)
+        print()
