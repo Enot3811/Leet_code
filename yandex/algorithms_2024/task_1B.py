@@ -40,23 +40,51 @@ N, которые должен взять Саша. Необходимо, что
 
 
 def shirts_and_socks(b_shirts, r_shirts, b_socks, r_socks):
-    b_sum = b_shirts + 1 + b_socks + 1
-    r_sum = r_shirts + 1 + r_socks + 1
-    if (b_sum < r_sum or b_shirts == 0 or b_socks == 0) and (r_shirts != 0 and r_socks != 0):  # В красное
-        return b_shirts + 1, b_socks + 1
-    else:  # В синее
-        return r_shirts + 1, r_socks + 1
+    if b_shirts == 0 or b_socks == 0:  # Одеваемся в красное
+        shirts = b_shirts + 1
+        socks = b_socks + 1
+        return shirts, socks
+    elif r_shirts == 0 or r_socks == 0:  # Одеваемся в синее
+        shirts = r_shirts + 1
+        socks = r_socks + 1
+        return shirts, socks
+    
+    elif b_shirts == r_shirts or b_socks == r_socks:  # Одеваемся во что угодно
+        # (2, 2, 5, 5)
+        if b_shirts < b_socks:
+            return b_shirts + 1, 1
+        else:
+            return 1, b_socks + 1
+        
+    else:
+        b_sum = b_shirts + 1 + b_socks + 1
+        r_sum = r_shirts + 1 + r_socks + 1
+        if b_sum < r_sum:
+            return b_shirts + 1, b_socks + 1
+        else:
+            return r_shirts + 1, r_socks + 1
 
 
 tests = [
     ((6, 2, 7, 3), (3, 4)),
-    ((1, 1, 1, 1), (2, 2)),
+    ((1, 1, 1, 1), (2, 1)),
     ((1, 5, 7, 1), (6, 2)),
     ((0, 6, 10, 1), (1, 11)),
     ((6, 0, 1, 10), (1, 11)),
     ((1, 10, 5, 11), (2, 6)),
     ((10, 0, 10, 0), (1, 1)),
-    ((0, 10, 0, 10), (1, 1))
+    ((0, 10, 0, 10), (1, 1)),
+    ((5, 2, 3, 7), (6, 4)),
+    ((7, 3, 6, 2), (4, 3)),
+    ((0, 5, 2, 5), (1, 3)),
+    ((0, 5, 5, 2), (1, 6)),
+    ((2, 5, 0, 5), (3, 1)),
+    ((5, 0, 2, 5), (1, 6)),
+    ((5, 0, 5, 2), (1, 3)),
+    ((1, 0, 1, 0), (1, 1)),
+    ((0, 10e9, 0, 10e9), (1, 1)),
+    ((10e7, 10e9, 10e9, 10e6), (10e9 + 1, 10e6 + 1)),
+    ((2, 5, 5, 2), (3, 6))
 ]
 
 for inp, ans in tests:
