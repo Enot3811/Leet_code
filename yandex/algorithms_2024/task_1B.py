@@ -51,9 +51,9 @@ def shirts_and_socks(b_shirts, r_shirts, b_socks, r_socks):
     
     elif b_shirts == r_shirts or b_socks == r_socks:  # Одеваемся во что угодно
         # (2, 2, 5, 5)
-        if b_shirts < b_socks:
+        if b_shirts == r_shirts:
             return b_shirts + 1, 1
-        else:
+        elif b_socks == r_socks:
             return 1, b_socks + 1
         
     else:
@@ -84,7 +84,8 @@ tests = [
     ((1, 0, 1, 0), (1, 1)),
     ((0, 10e9, 0, 10e9), (1, 1)),
     ((10e7, 10e9, 10e9, 10e6), (10e9 + 1, 10e6 + 1)),
-    ((2, 5, 5, 2), (3, 6))
+    ((2, 5, 5, 2), (3, 6)),
+    ((7, 7, 7, 9), (8, 1))
 ]
 
 for inp, ans in tests:
