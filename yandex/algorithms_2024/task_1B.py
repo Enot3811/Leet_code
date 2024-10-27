@@ -57,9 +57,21 @@ def shirts_and_socks(b_shirts, r_shirts, b_socks, r_socks):
             return 1, b_socks + 1
         
     else:
+        # Выгребаем рубашки
+        if max(b_shirts, r_shirts) < max(b_socks, r_socks):
+            shirts = max(b_shirts, r_shirts) + 1
+            socks = 1
+        # Выгребаем носки
+        else:
+            shirts = 1
+            socks = max(b_socks, r_socks) + 1
+        max_sum = shirts + socks
+
         b_sum = b_shirts + 1 + b_socks + 1
         r_sum = r_shirts + 1 + r_socks + 1
-        if b_sum < r_sum:
+        if max_sum < b_sum and max_sum < r_sum:
+            return shirts, socks
+        elif b_sum < r_sum:
             return b_shirts + 1, b_socks + 1
         else:
             return r_shirts + 1, r_socks + 1
@@ -68,13 +80,13 @@ def shirts_and_socks(b_shirts, r_shirts, b_socks, r_socks):
 tests = [
     ((6, 2, 7, 3), (3, 4)),
     ((1, 1, 1, 1), (2, 1)),
-    ((1, 5, 7, 1), (6, 2)),
+    ((1, 5, 7, 1), (6, 1)),
     ((0, 6, 10, 1), (1, 11)),
     ((6, 0, 1, 10), (1, 11)),
     ((1, 10, 5, 11), (2, 6)),
     ((10, 0, 10, 0), (1, 1)),
     ((0, 10, 0, 10), (1, 1)),
-    ((5, 2, 3, 7), (6, 4)),
+    ((5, 2, 3, 7), (6, 1)),
     ((7, 3, 6, 2), (4, 3)),
     ((0, 5, 2, 5), (1, 3)),
     ((0, 5, 5, 2), (1, 6)),
@@ -84,8 +96,11 @@ tests = [
     ((1, 0, 1, 0), (1, 1)),
     ((0, 10e9, 0, 10e9), (1, 1)),
     ((10e7, 10e9, 10e9, 10e6), (10e9 + 1, 10e6 + 1)),
-    ((2, 5, 5, 2), (3, 6)),
-    ((7, 7, 7, 9), (8, 1))
+    ((2, 5, 5, 2), (1, 6)),
+    ((7, 7, 7, 9), (8, 1)),
+    ((3, 2, 1, 1), (1, 2)),
+    ((10, 3, 8 ,2), (4, 3)),
+    ((8, 9, 5, 9), (10, 1))
 ]
 
 for inp, ans in tests:
