@@ -9,6 +9,7 @@ class ListNode:
     def __init__(self, val: int):
         self.val = val
         self.next: LinkedList = None
+        self.prev: LinkedList = None
 
 
 class LinkedList:
@@ -25,8 +26,10 @@ class LinkedList:
                     self.head = ListNode(val)
                     self.tail = self.head
                 else:
-                    self.tail.next = ListNode(val)
-                    self.tail = self.tail.next
+                    new_node = ListNode(val)
+                    self.tail.next = new_node
+                    new_node.prev = self.tail
+                    self.tail = new_node
             self.length += (i + 1)
 
     def __len__(self):
@@ -64,8 +67,10 @@ class LinkedList:
             self.head = ListNode(val)
             self.tail = self.head
         else:
-            self.tail.next = ListNode(val)
-            self.tail = self.tail.next
+            new_node = ListNode(val)
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
         self.length += 1
 
     def pop(self, idx: int) -> int:
@@ -82,9 +87,14 @@ class LinkedList:
         int
             Value of popped element.
         """
-        if idx == 0:
+        if len(self) == 1:
+            popped_val = self.head.val
+            self.head = None
+            self.tail = None
+        elif idx == 0:
             popped_val = self.head.val
             self.head = self.head.next
+            self.head.prev = None
             if len(self) == 1:
                 self.tail = self.head
         else:
@@ -98,6 +108,7 @@ class LinkedList:
             else:
                 popped_val = current.next.val
                 current.next = current.next.next
+                current.next.prev = current
         self.length -= 1
         return popped_val
     
