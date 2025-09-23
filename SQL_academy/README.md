@@ -1,0 +1,1 @@
+Готовлюсь к SQL секции с помощью сайта https://sql-academy.org/ru/trainer
