@@ -54,6 +54,9 @@ class LinkedList:
             node = node.next
         return node
 
+    def __str__(self):
+        return "[" + ", ".join(str(node.val) for node in self) + "]"
+
     def append(self, val: int):
         """
         Append a new value to tail of list.
@@ -140,4 +143,5 @@ class LinkedList:
 if __name__ == '__main__':
     l = LinkedList(range(5))
     for node in l:
-        print(node.val)        
+        print(node.val)
+    print(l)
