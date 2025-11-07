@@ -56,6 +56,7 @@ nums is sorted and rotated between 1 and n times.
 
 from typing import List
 
+# Решение 1: описанное выше
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         stack = [(0, len(nums) - 1)]
@@ -69,6 +70,28 @@ class Solution:
                 stack.append((st, mid))
                 stack.append((mid + 1, end))
         return min_num
+
+# Решение 2: Оптимизированное. Убрал стек, но пришло в голову не сразу
+# class Solution:
+#     def findMin(self, nums: List[int]) -> int:
+#         min_num = nums[0]
+#         st = 0
+#         end = len(nums) - 1
+#         while st < end:
+#             mid = (st + end) // 2
+
+#             # Если левая часть отсортирована
+#             if nums[st] < nums[mid]:
+#                 min_num = min(min_num, nums[st])
+#                 # Но минимум всё ещё может быть в левой части
+#                 st = mid + 1
+#             # Если левая не отсортирована, значит правая точно должна
+#             else:
+#                 min_num = min(min_num, nums[mid + 1])
+#                 # Но можем ещё поискать минимум в этой неотсортированной части
+#                 end = mid
+#         min_num = min(min_num, nums[st])
+#         return min_num
 
 
 sol = Solution()
