@@ -1,6 +1,6 @@
 """133. Clone Graph
 
-https://leetcode.com/problems/clone-graph/description/?envType=problem-list-v2&envId=oizxjoit
+https://leetcode.com/problems/clone-graph/
 
 Given a reference of a node in a connected undirected graph.
 Return a deep copy (clone) of the graph.
