@@ -23,9 +23,12 @@ The number of nodes in the list is the range [0, 5000].
 Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
 """
 
+# Размышления
+# Нам нужно 3 указателя: предыдущий, текущий и следующий.
+# Тогда мы сможем перенаправлять узлы по одному ничего не потеряв
+
 
 from typing import Optional
-
 
 # Definition for singly-linked list.
 class ListNode:
