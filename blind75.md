@@ -62,7 +62,7 @@
 62. 100
 63. [1143 Longest Common Subsequence (medium)](leet_CODE/1143_medium_Longest_Common_Subsequence.py)
 64. [102 Binary Tree Level Order Traversal (medium)](leet_CODE/102_medium_Binary_Tree_Level_Order_Traversal.py)
-65. 230
+65. [230 Kth Smallest Element in a BST (medium)](leet_CODE/230_medium_Kth_Smallest_Element_in_a_BST.py)
 66. 104
 67. 105
 68. 235
