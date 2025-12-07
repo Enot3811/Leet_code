@@ -1,0 +1,75 @@
+1. [128 Longest Consecutive Sequence (medium)](leet_CODE/128_medium_Longest_Consecutive_Sequence.py)
+2. [1 Two sum (easy)](leet_CODE/1_easy_Two_sum.py)
+3. [3 Longest Substring Without Repeating Characters (medium)](leet_CODE/3_medium_Longest_Substring_Without_Repeating_Characters.py)
+4. [5 Longest Palindromic Substring (medium)](leet_CODE/5_medium_Longest_Palindromic_Substring.py)
+5. [133 Clone Graph (medium)](leet_CODE/133_medium_Clone_Graph.py)
+6. 261
+7. [647 Palindromic Substrings (medium)](leet_CODE/647_medium_Palindromic_Substrings.py)
+8. [11 Container with most water (medium)](leet_CODE/11_medium_Container_with_most_water.py)
+9. [139 Word Break (medium)](leet_CODE/139_medium_Word_Break.py)
+10. [141 Linked List Cycle (easy)](leet_CODE/141_easy_Linked_List_Cycle.py)
+11. [268 Missing Number (easy)](leet_CODE/268_easy_Missing_Number.py)
+12. [15 3Sum (medium)](leet_CODE/15_medium_3Sum.py)
+13. [143 Reorder List (medium)](leet_CODE/143_medium_Reorder_List.py)
+14. 269
+15. 271
+16. [19 Remove Nth Node From End of List (medium)](leet_CODE/19_medium_Remove_Nth_Node_From_End_of_List.py)
+17. [20 Valid Parentheses (easy)](leet_CODE/20_easy_Valid_Parentheses.py)
+18. [21 Merge Two Sorted Lists (easy)](leet_CODE/21_easy_Merge_Two_Sorted_Lists.py)
+19. [23 Merge k Sorted Lists (hard)](leet_CODE/23_hard_Merge_k_Sorted_Lists.py)
+20. [152 Maximum Product Subarray (medium)](leet_CODE/152_medium_Maximum_Product_Subarray.py)
+21. [153 Find Minimum in Rotated Sorted Array (medium)](leet_CODE/153_medium_Find_Minimum_in_Rotated_Sorted_Array.py)
+22. [33 Search in Rotated Sorted Array (medium)](leet_CODE/33_medium_Search_in_Rotated_Sorted_Array.py)
+23. [417 Pacific Atlantic Water Flow (medium)](leet_CODE/417_medium_Pacific_Atlantic_Water_Flow.py)
+24. [39 Combination Sum (medium)](leet_CODE/39_medium_Combination_Sum.py)
+25. [295 Find Median from Data Stream (hard)](leet_CODE/295_hard_Find_Median_from_Data_Stream.py)
+26. [297 Serialize and Deserialize Binary Tree (hard)](leet_CODE/297_hard_Serialize_and_Deserialize_Binary_Tree.py)
+27. [424 Longest Repeating Character Replacement (medium)](leet_CODE/424_medium_Longest_Repeating_Character_Replacement.py)
+28. [300 Longest Increasing Subsequence (medium)](leet_CODE/300_medium_Longest_Increasing_Subsequence.py)
+29. [48 Rotate Image (medium)](leet_CODE/48_medium_Rotate_Image.py)
+30. [49 Group Anagrams (medium)](leet_CODE/49_medium_Group_Anagrams.py)
+31. [435 Non overlapping Intervals (medium)](leet_CODE/435_medium_Non_overlapping_Intervals.py)
+32. [53 Maximum Subarray (medium)](leet_CODE/53_medium_Maximum_Subarray.py)
+33. [54 Spiral Matrix (medium)](leet_CODE/54_medium_Spiral_Matrix.py)
+34. [55 Jump Game (medium)](leet_CODE/55_medium_Jump_Game.py)
+35. [56 Merge Intervals (medium)](leet_CODE/56_medium_Merge_Intervals.py)
+36. [57 Insert Interval (medium)](leet_CODE/57_medium_Insert_Interval.py)
+37. [572 Subtree of Another Tree (easy)](leet_CODE/572_easy_Subtree_of_Another_Tree.py)
+38. [62 Unique Paths (medium)](leet_CODE/62_medium_Unique_Paths.py)
+39. [190 Reverse Bits (easy)](leet_CODE/190_easy_Reverse_Bits.py)
+40. [191 Number of 1 Bits (easy)](leet_CODE/191_easy_Number_of_1_Bits.py)
+41. [322 Coin Change (medium)](leet_CODE/322_medium_Coin_Change.py)
+42. 323
+43. [70 Climbing Stairs (easy)](leet_CODE/70_easy_Climbing_Stairs.py)
+44. [198 House Rubber (medium)](leet_CODE/198_medium_House_Rubber.py)
+45. [200 Number of Islands (medium)](leet_CODE/200_medium_Number_of_Islands.py)
+46. [73 Set Matrix Zeroes (medium)](leet_CODE/73_medium_Set_Matrix_Zeroes.py)
+47. [76 Minimum Window Substring (hard)](leet_CODE/76_hard_Minimum_Window_Substring.py)
+48. [206 Reverse Linked List (easy)](leet_CODE/206_easy_Reverse_Linked_List.py)
+49. [79 Word search (medium)](leet_CODE/79_medium_Word_search.py)
+50. [207 Course Schedule (medium)](leet_CODE/207_medium_Course_Schedule.py)
+51. [208 Implement Prefix Tree (medium)](leet_CODE/208_medium_Implement_Prefix_Tree.py)
+52. [338 Counting Bits (easy)](leet_CODE/338_easy_Counting_Bits.py)
+53. [211 Design Add and Search Words Data Structure (medium)](leet_CODE/211_medium_Design_Add_and_Search_Words_Data_Structure.py)
+54. [212 Word Search II (hard)](leet_CODE/212_hard_Word_Search_II.py)
+55. [213 House Rubber II (medium)](leet_CODE/213_medium_House_Rubber_II.py)
+56. [217 Contains Duplicate (easy)](leet_CODE/217_easy_Contains_Duplicate.py)
+57. [91 Decode Ways (medium)](leet_CODE/91_medium_Decode_Ways.py)
+58. [347 Top K Frequent Elements (medium)](leet_CODE/347_medium_Top_K_Frequent_Elements.py)
+59. 253
+60. [98 Validate Binary Search Tree (medium)](leet_CODE/98_medium_Validate_Binary_Search_Tree.py)
+61. [226 Invert Binary Tree (easy)](leet_CODE/226_easy_Invert_Binary_Tree.py)
+62. 100
+63. [1143 Longest Common Subsequence (medium)](leet_CODE/1143_medium_Longest_Common_Subsequence.py)
+64. [102 Binary Tree Level Order Traversal (medium)](leet_CODE/102_medium_Binary_Tree_Level_Order_Traversal.py)
+65. 230
+66. 104
+67. 105
+68. 235
+69. 238
+70. [242 Valid Anagram (easy)](leet_CODE/242_easy_Valid_Anagram.py)
+71. 371
+72. 252
+73. 121
+74. [124 Binary Tree Maximum Path Sum (hard)](leet_CODE/124_hard_Binary_Tree_Maximum_Path_Sum.py)
+75. 125
