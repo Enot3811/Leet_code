@@ -64,7 +64,7 @@
 64. [102 Binary Tree Level Order Traversal (medium)](leet_CODE/102_medium_Binary_Tree_Level_Order_Traversal.py)
 65. [230 Kth Smallest Element in a BST (medium)](leet_CODE/230_medium_Kth_Smallest_Element_in_a_BST.py)
 66. [104 Maximum Depth of Binary Tree (easy)](leet_code/104_easy_Maximum_Depth_of_Binary_Tree.py)
-67. 105
+67. [105 Construct Binary Tree from Preorder and Inorder Traversal (medium)](leet_code/105_medium_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py)
 68. 235
 69. 238
 70. [242 Valid Anagram (easy)](leet_CODE/242_easy_Valid_Anagram.py)
