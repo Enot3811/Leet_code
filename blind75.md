@@ -66,9 +66,9 @@
 66. [104 Maximum Depth of Binary Tree (easy)](leet_code/104_easy_Maximum_Depth_of_Binary_Tree.py)
 67. [105 Construct Binary Tree from Preorder and Inorder Traversal (medium)](leet_code/105_medium_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py)
 68. [235 Lowest Common Ancestor of a Binary Search Tree (medium)](leet_code/235_medium_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py)
-69. [238 Product of Array Except Self](leet_code/238_medium_Product_of_Array_Except_Self.py)
+69. [238 Product of Array Except Self (medium)](leet_code/238_medium_Product_of_Array_Except_Self.py)
 70. [242 Valid Anagram (easy)](leet_CODE/242_easy_Valid_Anagram.py)
-71. 371
+71. [371 Sum of Two Integers (medium)](leet_code/371_medium_Sum_of_Two_Integers.py)
 72. 252
 73. 121
 74. [124 Binary Tree Maximum Path Sum (hard)](leet_CODE/124_hard_Binary_Tree_Maximum_Path_Sum.py)
