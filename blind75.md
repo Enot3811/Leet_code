@@ -72,4 +72,4 @@
 72. 252
 73. [121 Best Time to Buy and Sell Stock (easy)](leet_code/121_easy_Best_Time_to_Buy_and_Sell_Stock.py)
 74. [124 Binary Tree Maximum Path Sum (hard)](leet_CODE/124_hard_Binary_Tree_Maximum_Path_Sum.py)
-75. 125
+75. [125 Valid Palindrome (easy)](leet_code/125_easy_Valid_Palindrome.py)

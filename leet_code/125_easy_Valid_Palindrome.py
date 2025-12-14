@@ -1,9 +1,10 @@
-"""Valid Palindrome
+"""125. Valid Palindrome
 
-A phrase is a palindrome if, after converting all uppercase letters
-into lowercase letters and removing all non-alphanumeric characters,
-it reads the same forward and backward. Alphanumeric characters include letters
-and numbers.
+https://leetcode.com/problems/valid-palindrome/
+
+A phrase is a palindrome if, after converting all uppercase letters into lowercase
+letters and removing all non-alphanumeric characters, it reads the same forward
+and backward. Alphanumeric characters include letters and numbers.
 
 Given a string s, return true if it is a palindrome, or false otherwise.
 
@@ -29,9 +30,13 @@ Constraints:
 s consists only of printable ASCII characters.
 """
 
+# Размышления
+# Палиндромы следует проверять от центра к краям или наоборот,
+# таким образом достигается проверка за линейное время.
+# Касательно преобразования строки, можно было бы сделать это на исходной строке
+# просто проверяя текущие символы и двигая указатель вхолостую.
 
 import re
-
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
