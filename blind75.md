@@ -3,7 +3,7 @@
 3. [3 Longest Substring Without Repeating Characters (medium)](leet_CODE/3_medium_Longest_Substring_Without_Repeating_Characters.py)
 4. [5 Longest Palindromic Substring (medium)](leet_CODE/5_medium_Longest_Palindromic_Substring.py)
 5. [133 Clone Graph (medium)](leet_CODE/133_medium_Clone_Graph.py)
-6. 261
+6. [261 Graph Valid Tree (medium)](leet_code/261_medium_Graph_Valid_Tree.py)
 7. [647 Palindromic Substrings (medium)](leet_CODE/647_medium_Palindromic_Substrings.py)
 8. [11 Container with most water (medium)](leet_CODE/11_medium_Container_with_most_water.py)
 9. [139 Word Break (medium)](leet_CODE/139_medium_Word_Break.py)
