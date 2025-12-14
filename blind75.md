@@ -70,6 +70,6 @@
 70. [242 Valid Anagram (easy)](leet_CODE/242_easy_Valid_Anagram.py)
 71. [371 Sum of Two Integers (medium)](leet_code/371_medium_Sum_of_Two_Integers.py)
 72. 252
-73. 121
+73. [121 Best Time to Buy and Sell Stock (easy)](leet_code/121_easy_Best_Time_to_Buy_and_Sell_Stock.py)
 74. [124 Binary Tree Maximum Path Sum (hard)](leet_CODE/124_hard_Binary_Tree_Maximum_Path_Sum.py)
 75. 125
