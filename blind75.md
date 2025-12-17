@@ -11,8 +11,8 @@
 11. [268 Missing Number (easy)](leet_CODE/268_easy_Missing_Number.py)
 12. [15 3Sum (medium)](leet_CODE/15_medium_3Sum.py)
 13. [143 Reorder List (medium)](leet_CODE/143_medium_Reorder_List.py)
-14. 269
-15. 271
+14. 269 Изучи post order dfs и Topological sort
+15. [271 Encode and Decode Strings](leet_code/271_medium_Encode_and_Decode_Strings.py)
 16. [19 Remove Nth Node From End of List (medium)](leet_CODE/19_medium_Remove_Nth_Node_From_End_of_List.py)
 17. [20 Valid Parentheses (easy)](leet_CODE/20_easy_Valid_Parentheses.py)
 18. [21 Merge Two Sorted Lists (easy)](leet_CODE/21_easy_Merge_Two_Sorted_Lists.py)
