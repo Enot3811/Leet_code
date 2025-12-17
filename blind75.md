@@ -12,7 +12,7 @@
 12. [15 3Sum (medium)](leet_CODE/15_medium_3Sum.py)
 13. [143 Reorder List (medium)](leet_CODE/143_medium_Reorder_List.py)
 14. 269 Изучи post order dfs и Topological sort
-15. [271 Encode and Decode Strings](leet_code/271_medium_Encode_and_Decode_Strings.py)
+15. [271 Encode and Decode Strings (medium)](leet_code/271_medium_Encode_and_Decode_Strings.py)
 16. [19 Remove Nth Node From End of List (medium)](leet_CODE/19_medium_Remove_Nth_Node_From_End_of_List.py)
 17. [20 Valid Parentheses (easy)](leet_CODE/20_easy_Valid_Parentheses.py)
 18. [21 Merge Two Sorted Lists (easy)](leet_CODE/21_easy_Merge_Two_Sorted_Lists.py)
@@ -39,7 +39,7 @@
 39. [190 Reverse Bits (easy)](leet_CODE/190_easy_Reverse_Bits.py)
 40. [191 Number of 1 Bits (easy)](leet_CODE/191_easy_Number_of_1_Bits.py)
 41. [322 Coin Change (medium)](leet_CODE/322_medium_Coin_Change.py)
-42. 323
+42. [323 Number of Connected Components in an Undirected Graph (medium)](leet_code/323_medium_Number_of_Connected_Components_in_an_Undirected_Graph.py)
 43. [70 Climbing Stairs (easy)](leet_CODE/70_easy_Climbing_Stairs.py)
 44. [198 House Rubber (medium)](leet_CODE/198_medium_House_Rubber.py)
 45. [200 Number of Islands (medium)](leet_CODE/200_medium_Number_of_Islands.py)
