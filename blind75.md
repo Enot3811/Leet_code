@@ -56,10 +56,10 @@
 56. [217 Contains Duplicate (easy)](leet_CODE/217_easy_Contains_Duplicate.py)
 57. [91 Decode Ways (medium)](leet_CODE/91_medium_Decode_Ways.py)
 58. [347 Top K Frequent Elements (medium)](leet_CODE/347_medium_Top_K_Frequent_Elements.py)
-59. 253
+59. [253 Meeting Rooms II (medium)](leet_code/253_medium_Meeting_Rooms_II.py)
 60. [98 Validate Binary Search Tree (medium)](leet_CODE/98_medium_Validate_Binary_Search_Tree.py)
 61. [226 Invert Binary Tree (easy)](leet_CODE/226_easy_Invert_Binary_Tree.py)
-62. 100
+62. [100 Same Tree (easy)](leet_CODE/100_easy_Same_Tree.py)
 63. [1143 Longest Common Subsequence (medium)](leet_CODE/1143_medium_Longest_Common_Subsequence.py)
 64. [102 Binary Tree Level Order Traversal (medium)](leet_CODE/102_medium_Binary_Tree_Level_Order_Traversal.py)
 65. [230 Kth Smallest Element in a BST (medium)](leet_CODE/230_medium_Kth_Smallest_Element_in_a_BST.py)
@@ -69,7 +69,7 @@
 69. [238 Product of Array Except Self (medium)](leet_code/238_medium_Product_of_Array_Except_Self.py)
 70. [242 Valid Anagram (easy)](leet_CODE/242_easy_Valid_Anagram.py)
 71. [371 Sum of Two Integers (medium)](leet_code/371_medium_Sum_of_Two_Integers.py)
-72. 252
+72. [252 Meeting Rooms (easy)](leet_code/252_easy_Meeting_Rooms.py)
 73. [121 Best Time to Buy and Sell Stock (easy)](leet_code/121_easy_Best_Time_to_Buy_and_Sell_Stock.py)
 74. [124 Binary Tree Maximum Path Sum (hard)](leet_CODE/124_hard_Binary_Tree_Maximum_Path_Sum.py)
 75. [125 Valid Palindrome (easy)](leet_code/125_easy_Valid_Palindrome.py)
