@@ -32,9 +32,12 @@ Constraints:
 Only one valid answer exists.
 """
 
+# Размышления
+# Взяв i-е число, мы можем узнать, сколько нам не хватает для target.
+# Мы можем запомнить эту разницу, и далее мы можем встретить эту разницу.
+# n по памяти и скорости.
 
 from typing import List
-
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:

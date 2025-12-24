@@ -36,7 +36,6 @@ Both list1 and list2 are sorted in non-decreasing order.
 from typing import Optional
 from linked_list import LinkedList, ListNode
 
-
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         if list1 is None:

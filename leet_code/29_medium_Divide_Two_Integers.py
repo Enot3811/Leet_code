@@ -16,7 +16,6 @@ For this problem, if the quotient is strictly greater than 2**31 - 1,
 then return 2**31 - 1, and if the quotient is strictly less than -2**31,
 then return -2**31.
 
-
 Example 1:
 Input: dividend = 10, divisor = 3
 Output: 3
@@ -32,6 +31,18 @@ Constraints:
 divisor != 0
 """
 
+# Размышления
+# Вместо деления проще решать задачу умножения,
+# на сколько нужно умножить divisor, чтобы получить dividend.
+# При невозможности умножения мы можем только складывать.
+# А чтобы ускорить сложение, мы можем накапливать слагаемое.
+# Например 100 и 3: 3, 6, 12, 24, 48, 96, 192
+# Накапливаем до тех пор, пока не переполнится, а затем начнём уменьшать слагаемое.
+# То есть вместо 96 + 96, будем идти назад 48, 24, 12, 6, 3 пока не попадём в <dividend.
+# Есть случаи, когда с одного раза не попадём. Например 33 и 3.
+# 24 + 6 на одной итерации, а затем 30 + 3 на другой.
+# То есть необходимо пробовать прибавлять, пока накопленное число меньше dividend.
+# Знак же на само число не влияет, добавим его в конце, если необходимо.
 
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
@@ -64,9 +75,12 @@ class Solution:
         return answer
 
 
-if __name__ == '__main__':
-    sol = Solution()
-    a = 100
-    b = 3
-    res = sol.divide(a, b)
-    print(res)
+cases = [
+    ((100, 3), 33),
+    ((33, 3), 11),
+    ((-24, 7), -3)
+]
+sol = Solution()
+for inp, ans in cases:
+    res = sol.divide(*inp)
+    print(inp, res, ans)

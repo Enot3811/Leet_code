@@ -25,7 +25,6 @@ The number of nodes in the list is sz.
 1 <= n <= sz
 """
 
-
 # Размышления
 # Можно решить с помощью финта с медленным и быстрым указателем
 # Так мы окажемся на середине списка, узнаем его длину и легко дойдём до n-го с конца.
@@ -40,15 +39,12 @@ The number of nodes in the list is sz.
 # |-2^---1|
 # И удаляем его
 
-[1, 2, 3, 4]
-
 from typing import Optional
 
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-
 
 class Solution:
     def removeNthFromEnd(

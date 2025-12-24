@@ -1,4 +1,6 @@
-"""Generate Parentheses
+"""22. Generate Parentheses
+
+https://leetcode.com/problems/generate-parentheses/
 
 Given n pairs of parentheses, write a function to generate all combinations
 of well-formed parentheses.
@@ -15,9 +17,13 @@ Constraints:
 1 <= n <= 8
 """
 
+# Размышления
+# Обычный dfs с полным перебором.
+# На текущей итерации можем либо открыть скобку и отправить дальше,
+# либо закрыть и отправить дальше.
+# Для отслеживания прогресса используем счётчики открытых и закрытых скобок.
 
 from typing import List
-
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
@@ -35,21 +41,18 @@ class Solution:
             return [''.join(current_str)]
         variants = []
         if open_cnt > 0:
-            # Add new variants when we open parentheses
+            # Добавляем новые вариант, когда открыли скобку
             current_str.append('(')
             variants += Solution.solve_step(
                 current_str, open_cnt - 1, close_cnt + 1)
             current_str.pop()
         if close_cnt > 0:
-            # Add new variant when we close parentheses
+            # Добавляем новые вариант, когда закрыли скобку
             current_str.append(')')
             variants += Solution.solve_step(
                 current_str, open_cnt, close_cnt - 1)
             current_str.pop()
         return variants
-
-
-sol = Solution()
 
 examples = [
     (1, ['()']),
@@ -59,7 +62,7 @@ examples = [
          "(()())()","(())(())","(())()()","()((()))","()(()())","()(())()",
          "()()(())","()()()()"])
 ]
-
+sol = Solution()
 for inp, ans in examples:
     out = sol.generateParenthesis(inp)
     print(inp, out, ans, set(out) == set(ans))
