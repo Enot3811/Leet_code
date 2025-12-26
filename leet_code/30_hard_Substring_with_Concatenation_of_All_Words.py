@@ -1,4 +1,6 @@
-"""Substring with Concatenation of All Words.
+"""30. Substring with Concatenation of All Words
+
+https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 
 You are given a string s and an array of strings words.
 All the strings of words are of the same length.
@@ -45,7 +47,6 @@ It is the concatenation of ["bar","the","foo"] which is a permutation of words.
 The substring starting at 12 is "thefoobar".
 It is the concatenation of ["the","foo","bar"] which is a permutation of words.
  
-
 Constraints:
 1 <= s.length <= 10**4
 1 <= words.length <= 5000
@@ -53,67 +54,88 @@ Constraints:
 s and words[i] consist of lowercase English letters.
 """
 
+# Теги
+# Плавающее окно (left-right pointers), Словарь счётчиков (dict counter),
+# Очередь (queue)
+
+# Размышления
+# Первое, за что можно зацепиться - длина слов, она одинакова.
+# То есть можно проходить по строке с шагом в длину слова.
+# Но при этом здесь важно заметить, что нам не давали гарантии, что нужные слова будут
+# начинаться с нулевого символа. Нужны сдвиги старта от 0 до word_len - 1.
+# Второе, нам нужно собрать определённое количество определённых слов в подстроке.
+# Значит нужно их считать - dict counter.
+# Прибавляем нужный счётчик при прохождении текущего слова.
+# Если слово вообще не в словаре, то сброс счётчиков.
+# Третье, допустим, мы соберём нашу комбинацию. Как идти дальше?
+# Нужно помнить порядок слов, которые мы клали. Нужен stack или скорее queue.
+# Вынимаем слева самое старое слово, отнимаем соответствующий счётчик.
+# К тому же у нас может быть переизбыток нужных слов, на что нам укажет счётчик.
+# И здесь как в задачах с left-right окном, нужно выкидывать старые слова,
+# пока счётчик не успокоится, тоже queue.
+# Плюс к этому эта очередь поможет легко определять, что последовательность собрана
+# без прохода по всему дикту счётчиков.
+# Ведь счётчики гарантируют отсутствие лишних слов,
+# а значит если len(queue) == len(words), то все слова собраны.
 
 from typing import List
-from collections import defaultdict, deque
-
+from collections import deque
 
 class Solution:
     def findSubstring(self, s: str, words: List[str]) -> List[int]:
-        word_len = len(words[0])
-        sequence_len = word_len * len(words)
-        word_dict = defaultdict(int)
+        # Делаем словарь счётчиков слов, чтобы отслеживать сбор всех слов в подстроке.
+        words_dict = {}
         for word in words:
-            word_dict[word] += 1
-        answer = []
+            if word in words_dict:
+                words_dict[word] += 1
+            else:
+                words_dict[word] = 1
+        word_len = len(words[0])
 
-        # Обрабатываем последовательность со всеми возможными сдвигами
-        # от 0 до word_len
+        ans = []
+
+        # Удобнее всего будет проходить строку с шагом word_len,
+        # но тогда нужно перебрать все сдвиги от 0 до word_len-1
         for i in range(word_len):
-            # Копия словаря для коллекционирования слов
-            current_words = word_dict.copy()
-            # и очередь для сборки последовательности
-            sequence = deque()
 
-            # Идём по словам
+            # Счётчики, которые отслеживают перебор
+            curr_words = words_dict.copy()
+            # Последовательность, которая позволяет быстро находить нужный счётчик,
+            # и вдобавок по её длине можно сразу понять, что мы закончили,
+            # так как ненужных дублей не будет благодаря счётчику
+            curr_seq = deque()
             for j in range(i, len(s), word_len):
-                selected_word = s[j:j + word_len]
-                if selected_word in current_words:
-                    # Если нужное слово, то в любом случае надо добавить его
-                    # в последовательность, но следует решить вопрос с
-                    # его необходимым количеством
-                    if current_words[selected_word] > 0:
-                        current_words[selected_word] -= 1
-                    # Если нужное слово, но в чрезмерном колиестве
-                    else:
-                        # то придётся удалять ранее сохранённые слова
-                        # до тех пор, пока не получится уместить текущее,
-                        # либо пока очередь не очистится полностью
-                        while len(sequence) > 0:
-                            deleted_word = sequence.popleft()
-                            if selected_word == deleted_word:
-                                break
-                            else:
-                                current_words[deleted_word] += 1
-                    sequence.append(selected_word)
+                word = s[j:j + word_len]
 
-                    # Каждый раз проверяем, не собралась ли последовательность
-                    if sum(current_words.values()) == 0:
-                        answer.append(j - sequence_len + word_len)
-                        deleted_word = sequence.popleft()
-                        current_words[deleted_word] += 1
+                if word in curr_words:
+                    curr_words[word] -= 1
+                    curr_seq.append(word)
 
-                # Если слово, которое не нужно
+                    # Если перебор, то двигаем левую границу
+                    while curr_words[word] < 0 and len(curr_seq) > 0:
+                        deleted_word = curr_seq.popleft()
+                        curr_words[deleted_word] += 1
+
+                    # Собрали все слова
+                    if len(curr_seq) == len(words):
+                        # Сейчас индекс стоит на начале последнего слова в подстроке
+                        ans.append(j - (len(words) - 1) * word_len)
+                        deleted_word = curr_seq.popleft()
+                        curr_words[deleted_word] += 1
+
+                # Слово не подходит, сбрасываем всё, что собрали
                 else:
-                    # то придётся сбросить словарь и очередь
-                    if current_words != word_dict:
-                        sequence = deque()
-                        current_words = word_dict.copy()
-        return answer
+                    curr_words = words_dict.copy()
+                    curr_seq.clear()
+        return ans
 
-
-if __name__ == '__main__':
-    sol = Solution()
-    s = 'lingmindraboofooowingdingbarrwingmonkeypoundcake'
-    words = ['fooo', 'barr', 'wing', 'ding', 'wing']
-    print(sol.findSubstring(s, words))
+cases = [
+    (("barfoothefoobarman", ["foo","bar"]), [0,9]),
+    (("wordgoodgoodgoodbestword", ["word","good","best","word"]), []),
+    (("barfoofoobarthefoobarman", ["bar","foo","the"]), [6,9,12]),
+    (("lingmindraboofooowingdingbarrwingmonkeypoundcake", ['fooo','barr','wing','ding','wing']), [13])
+]
+sol = Solution()
+for inp, ans in cases:
+    res = sol.findSubstring(*inp)
+    print(inp, res, ans)
