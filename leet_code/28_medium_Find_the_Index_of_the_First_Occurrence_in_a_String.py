@@ -21,6 +21,14 @@ Constraints:
 haystack and needle consist of only lowercase English characters.
 """
 
+# Теги
+# Неоптимальное решение
+
+# Размышления
+# Находим первую букву needle в haystack и далее проходим по обоим словам.
+# Сложность O(n * m)
+# Более оптимальное решение - KMP алгоритм, которые слишком сложный для собеса.
+
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         answer = -1

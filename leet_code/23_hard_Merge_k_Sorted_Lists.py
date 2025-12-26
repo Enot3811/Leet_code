@@ -37,6 +37,9 @@ lists[i] is sorted in ascending order.
 The sum of lists[i].length will not exceed 10**4.
 """
 
+# Теги
+# Продолжение задачи, merge sort, Связанный список (Linked list)
+
 # Размышления
 # Так или иначе эта задача сводится к слитию двух списков (task 21),
 # что даст сложность n * k. Однако то, как мы будем сливать списки, может дать буст.

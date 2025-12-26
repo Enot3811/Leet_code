@@ -26,6 +26,8 @@ Constraints:
 s consists of English letters, digits, symbols and spaces.
 """
 
+# Теги
+# Плавающее окно (left-right pointers)
 
 # Размышления
 # Типичная задача на два указателя

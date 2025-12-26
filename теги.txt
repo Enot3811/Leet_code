@@ -1,0 +1,15 @@
+- Плавающее окно (left-right pointers),
+- Сдвигающиеся указатели (left-right pointers)
+- Раздвигающиеся указатели (left-right pointers)
+- Словарь счётчиков (dict counter),
+- Очередь (queue)
+- Воссоздание базовых операций
+- Неоптимальное решение
+- Продолжение задачи
+- merge sort
+- Поиск в глубину (dfs)
+- Связанный список (Linked list)
+- Стек (stack)
+- Быстрый и медленный указатель (fast and slow pointer)
+- Бинарный поиск (binary search)
+- Мемоизация словарём (dict memoization)

@@ -27,6 +27,9 @@ The number of nodes in both lists is in the range [0, 50].
 Both list1 and list2 are sorted in non-decreasing order.
 """
 
+# Теги
+# Связанный список (Linked list)
+
 # Размышления
 # Так как 2 списка отсортированы, head хранят наименьшие значения
 # Будем сравнивать head друг с другом на каждом шагу. Меньшую пихаем в новый список и
