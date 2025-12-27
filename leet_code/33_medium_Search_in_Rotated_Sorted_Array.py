@@ -34,6 +34,8 @@ nums is an ascending array that is possibly rotated.
 -10**4 <= target <= 10**4
 """
 
+# Теги
+# Бинарный поиск (binary search), Продолжение задачи
 
 # Размышления
 # Задача связана с 153 таской, где был такой же массив, но искали минимум, а не target.

@@ -1,4 +1,6 @@
-"""Search Insert Position.
+"""35. Search Insert Position
+
+https://leetcode.com/problems/search-insert-position/
 
 Given a sorted array of distinct integers and a target value,
 return the index if the target is found.
@@ -25,9 +27,13 @@ nums contains distinct values sorted in ascending order.
 -10**4 <= target <= 10**4
 """
 
+# Теги
+# Бинарный поиск (binary search)
+
+# Размышления
+# Задача на знакомство с binary search
 
 from typing import List
-
 
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
