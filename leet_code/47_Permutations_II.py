@@ -1,4 +1,6 @@
-"""Permutations II.
+"""47. Permutations II
+
+https://leetcode.com/problems/permutations-ii/
 
 Given a collection of numbers, nums, that might contain duplicates,
 return all possible unique permutations in any order. 
@@ -19,29 +21,39 @@ Constraints:
 -10 <= nums[i] <= 10
 """
 
+# Теги
+# Поиск в глубину (dfs), Продолжение задачи
+
+# Размышления
+# Задача является продолжением задачи (46. Permutations), и по сути имеет точно такое же
+# решение.
+# Единственное, требуется избежать дубликатов,
+# а для этого нам нужно избежать использования повторяющихся чисел.
+# Добавим на каждом шаге set, который запомнит, какие числа мы уже использовали.
 
 from typing import List
 
-
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        def permute_step(nums: List[int]):
-            if len(nums) == 1:
-                return (nums,)
-            
-            inserter = nums[0]
-            sum_permutes = tuple(permute_step(nums[1:]))
+        ans = []
+        def dfs(locked: int):
+            if locked == len(nums):
+                ans.append(nums[:])
 
-            permutes = set()
-            for term in sum_permutes:
-                for i in range(len(term) + 1):
-                    permutes.add(tuple(term[:i] + (inserter,) + term[i:]))
-            return permutes
-
-        return tuple(permute_step(tuple(nums)))
+            # Добавим set чисел, которые уже использовали
+            used = set()
+            for i in range(locked, len(nums)):
+                if nums[i] not in used:
+                    # Запоминаем число, которое уже использовали, чтобы избежать дублей
+                    used.add(nums[i])
+                    nums[locked], nums[i] = nums[i], nums[locked]
+                    dfs(locked + 1)
+                    nums[locked], nums[i] = nums[i], nums[locked]
+        dfs(0)
+        return ans
     
 
 if __name__ == '__main__':
     sol = Solution()
-    nums = [1, 1, 2]
+    nums = [1, 1, 2, 2, 3]
     print(sol.permuteUnique(nums))
