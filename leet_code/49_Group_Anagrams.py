@@ -29,6 +29,8 @@ Constraints:
 strs[i] consists of lowercase English letters.
 """
 
+# Теги
+# Словарь счётчиков (dict counter)
 
 # Размышления
 # Будем считать буквы в каждом слове, делать из них кортеж и класть в дикт.

@@ -27,6 +27,8 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 using the divide and conquer approach, which is more subtle.
 """
 
+# Теги
+# Кумулятивная сумма (cumulative sum)
 
 # Размышления
 # Сначала казалось, что можно как-то пристроить префиксные суммы, 
@@ -38,7 +40,6 @@ using the divide and conquer approach, which is more subtle.
 # ведь лучше уже будет начать заново.
 # Если она положительна, но начинает снижаться, мы её ещё не бросаем, так как она
 # ещё может вырасти, но засекаем максимум
-
 
 from typing import List
 
