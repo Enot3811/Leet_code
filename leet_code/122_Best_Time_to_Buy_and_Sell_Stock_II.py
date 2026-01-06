@@ -1,4 +1,7 @@
-"""
+"""122. Best Time to Buy and Sell Stock II
+
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+
 You are given an integer array prices
 where prices[i] is the price of a given stock on the ith day.
 
@@ -7,8 +10,6 @@ You can only hold at most one share of the stock at any time.
 However, you can buy it then immediately sell it on the same day.
 
 Find and return the maximum profit you can achieve.
-
- 
 
 Example 1:
 Input: prices = [7,1,5,3,6,4]
@@ -33,8 +34,20 @@ so we never buy the stock to achieve the maximum profit of 0.
  
 Constraints:
 1 <= prices.length <= 3 * 10^4
-0 <= prices[i] <= 10&4
+0 <= prices[i] <= 10^4
 """
+
+# Теги
+# Продолжение задачи
+
+# Размышления
+# Задача является продолжением задачи (121. Best Time to Buy and Sell Stock).
+# Отличие в том, что там искали одну оптимальную покупку и продажу, а здесь все.
+# То есть если мы можем купить дешевле и продать дороже, то это надо делать.
+# В итоге покрываем все восходящие промежутки.
+# Если число больше предыдущего, то холдим.
+# Если число меньше, то продаём на предыдущем и покупаем на текущем.
+# Если уменьшение продолжается, то продастся там же, где и купилось, то есть 0 потерь.
 
 from typing import List
 
