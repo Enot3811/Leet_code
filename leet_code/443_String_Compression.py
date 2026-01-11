@@ -1,4 +1,6 @@
-"""String Compression
+"""443. String Compression
+
+https://leetcode.com/problems/string-compression/
 
 Given an array of characters chars, compress it using the following algorithm:
 
@@ -41,31 +43,48 @@ chars[i] is a lowercase English letter,
 uppercase English letter, digit, or symbol.
 """
 
+# Теги
+# Просто лёгкая задача (Easy task)
+
+# Размышления
+# Проходим по массиву, запомнив текущий отслеживаемый символ.
+# Когда натыкаемся на новый символ, делаем запись.
+# Для записи запоминаем индекс. Этот индекс всегда будет до текущего символа,
+# или в худшем случае на нём самом. Так что ничего лишнего не затрём.
 
 class Solution:
     def compress(self, chars: list[str]) -> int:
-        cur_let = chars[0]
-        cur_len = 1
-        i = 1
-        while i < len(chars):
-            if chars[i] == cur_let:
-                cur_len += 1
-                chars.pop(i)
+        curr_let = chars[0]
+        curr_len = 0
+        write_idx = 0
+        for let in chars:
+            if curr_let == let:
+                curr_len += 1
             else:
-                if cur_len > 1:
-                    for digit in str(cur_len):
-                        chars.insert(i, digit)
-                        i += 1
-                cur_len = 1
-                cur_let = chars[i]
-                i += 1
-        if cur_len > 1:
-            for digit in str(cur_len)[::-1]:
-                chars.insert(i, digit)
-        return len(chars)
+                # Записываем
+                chars[write_idx] = curr_let
+                write_idx += 1
+                if curr_len != 1:
+                    # Число может быть составным
+                    str_len = str(curr_len)
+                    for chr in str_len:
+                        chars[write_idx] = chr
+                        write_idx += 1
+                # Запоминаем новую
+                curr_let = let
+                curr_len = 1
+        # Записываем
+        chars[write_idx] = curr_let
+        write_idx += 1
+        if curr_len != 1:
+            str_len = str(curr_len)
+            for chr in str_len:
+                chars[write_idx] = chr
+                write_idx += 1
+        # В итоге индекс и будет указывать на конец массива, или на его длину
+        return write_idx
 
-
-examples = [
+cases = [
     (["a","a","b","b","c","c","c"], 6),
     (["a"], 1),
     (["a","b","b","b","b","b","b","b","b","b","b","b","b"], 4),
@@ -73,10 +92,8 @@ examples = [
     (["a","a","a","a","a","a","a","a","a","a","a","a"], 3),
     (["a","a","a","a","a","a","a","a","a","a","a","a","b","b","c","c","c"], 7)
 ]
-
 sol = Solution()
-
-for inp, ans in examples:
+for inp, ans in cases:
     redacted = inp.copy()
     out = sol.compress(redacted)
-    print(inp, redacted, out, ans)
+    print(inp, redacted[:out], out, ans)
