@@ -13,6 +13,8 @@
 - Быстрый и медленный указатель (fast and slow pointer)
 - Бинарный поиск (binary search)
 - Мемоизация словарём (dict memoization)
+- Поиск в сете (set search)
 - Просто заморочная задача
 - Кумулятивная сумма (cumulative sum)
 - Динамическое программирование (DP)
+- Конечный автомат (finite state machine)
