@@ -1,4 +1,6 @@
-"""Summary Ranges
+"""228. Summary Ranges
+
+https://leetcode.com/problems/summary-ranges/
 
 You are given a sorted unique integer array nums.
 A range [a,b] is the set of all integers from a to b (inclusive).
@@ -36,6 +38,12 @@ All the values of nums are unique.
 nums is sorted in ascending order.
 """
 
+# Теги
+# Просто лёгкая задача (Easy task)
+
+# Размышления
+# Проходим по массиву, смотрим, что текущее число на 1 больше предыдущего.
+# Следим, что начало интервала и его конец не равны, ведь тогда обозначение другое.
 
 class Solution:
     def summaryRanges(self, nums: list[int]) -> list[str]:
