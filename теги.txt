@@ -20,3 +20,4 @@
 - Конечный автомат (finite state machine)
 - Интервалы (Intervals)
 - Просто лёгкая задача (Easy task)
+- Матрицы (Matrix)

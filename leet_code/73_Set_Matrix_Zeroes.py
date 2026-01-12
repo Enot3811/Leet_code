@@ -28,6 +28,9 @@ A simple improvement uses O(m + n) space, but still not the best solution.
 Could you devise a constant space solution?
 """
 
+# Теги
+# Матрицы (Matrix)
+
 # Размышления
 # Главная мысль, к которой надо прийти, это то, что нам надо помечать строки и столбцы
 # на закрашивание во время прохода по матрице, и только потому уже их закрашивать.

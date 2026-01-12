@@ -1,4 +1,6 @@
-"""Combinations.
+"""77. Combinations
+
+https://leetcode.com/problems/combinations/
 
 Given two integers n and k, return all possible combinations of k numbers
 chosen from the range [1, n].
@@ -22,33 +24,38 @@ Constraints:
 1 <= k <= n
 """
 
+# Теги
+# Поиск в глубину (dfs)
 
-# from itertools import combinations
+# Размышления
+# Задача на ветвление через dfs.
+# На текущем шаге можем перебрать все числа от предыдущего числа до n.
+# Вглубь идём до k.
+
 from typing import List
-
 
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
+        ans = []
+        current = []
+        n += 1  # для удобства range
+        def dfs(curr_k: int, curr_n: int):
+            if curr_k == k:
+                ans.append(current.copy())
+                return
+            for num in range(curr_n, n):
+                current.append(num)
+                dfs(curr_k + 1, num + 1)
+                current.pop()
+        dfs(curr_k=0, curr_n=1)
+        return ans
 
-        def combine_next(n: int, k: int, start: int):
-            global answer, combined_numbers
-            for i in range(start, n):
-                combined_numbers.append(i)
-                if len(combined_numbers) < k:
-                    combine_next(n, k, combined_numbers[-1] + 1)
-                else:
-                    answer.append(combined_numbers[:])
-                combined_numbers.pop()
-
-        n += 1
-        global answer, combined_numbers
-        answer = []
-        combined_numbers = []
-        combine_next(n, k, 1)
-        return answer
-
-
-if __name__ == '__main__':
-    sol = Solution()
-    print(sol.combine(6, 3))
-# print(list(combinations([*range(1, 6+1)], 3)))
+cases = [
+    ((4, 2), [[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]),
+    ((1, 1), [[1]]),
+    ((3,3),[[1,2,3]])
+]
+sol = Solution()
+for inp, ans in cases:
+    res = sol.combine(*inp)
+    print(inp, res, ans)
