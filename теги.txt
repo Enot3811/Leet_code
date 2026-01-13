@@ -21,3 +21,4 @@
 - Интервалы (Intervals)
 - Просто лёгкая задача (Easy task)
 - Матрицы (Matrix)
+- Два указателя (read/write pointers)

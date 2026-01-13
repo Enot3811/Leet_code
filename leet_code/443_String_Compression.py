@@ -44,7 +44,7 @@ uppercase English letter, digit, or symbol.
 """
 
 # Теги
-# Просто лёгкая задача (Easy task)
+# Два указателя (read/write pointers)
 
 # Размышления
 # Проходим по массиву, запомнив текущий отслеживаемый символ.

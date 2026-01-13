@@ -1,4 +1,6 @@
-"""Move Zeroes
+"""283. Move Zeroes
+
+https://leetcode.com/problems/move-zeroes/
 
 Given an integer array nums, move all 0's to the end of it while maintaining
 the relative order of the non-zero elements.
@@ -18,9 +20,14 @@ Constraints:
 -2^31 <= nums[i] <= 2^31 - 1
 """
 
+# Теги
+# Два указателя (read/write pointers)
+
+# Размышления
+# Будем сдвигать числа начиная с нулевого индекса, затирая нули.
+# При этом посчитаем, сколько их было, чтобы после вставить их в конец.
 
 from typing import List
-
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
