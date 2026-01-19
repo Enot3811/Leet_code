@@ -36,6 +36,9 @@ Follow up: Could you use search pruning to make your solution faster
 with a larger board?
 """
 
+# Теги
+# Поиск в глубину (dfs), мемоизация словарём (dict memoization)
+
 # Размышления
 # Сразу мысли о dfs. Проходим по доске и на каждой ячейке пытаемся построить слово.
 # Отслеживаем пройденный путь, чтобы не зациклиться,

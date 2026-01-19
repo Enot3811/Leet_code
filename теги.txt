@@ -1,4 +1,4 @@
-- Плавающее окно (left-right pointers),
+- Плавающее окно (left-right pointers)
 - Сдвигающиеся указатели (left-right pointers)
 - Раздвигающиеся указатели (left-right pointers)
 - Словарь счётчиков (dict counter),
