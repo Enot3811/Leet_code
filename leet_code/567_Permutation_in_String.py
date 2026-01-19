@@ -19,32 +19,62 @@ Constraints:
 s1 and s2 consist of lowercase English letters.
 """
 
+# Теги
+# Плавающее окно (left-right pointers), Словарь счётчиков (dict counter)
 
-from collections import Counter
+# Размышления
+# Задача на плавающее окно и dict counter.
+# Считаем буквы в искомой строке, чтобы понимать что и сколько мы ищем.
+# Проходя по s2 смотрим, пытаемся собрать точно такой же счётчик словарь.
+# Если встречаем ненужную букву, то сразу сброс.
+# Если переполнение нужной, то придётся сужать окно, двигать левый указатель,
+# выбрасывая предыдущие буквы до тех пор, пока не устранится переполнение.
+# И ещё один финт, для проверки окончания сбора.
+# Обычно бы нам пришлось всё время сравнивать два словаря.
+# Но вместо этого заведём общий счётчик букв.
+# Ведь если мы собираем только нужные буквы, то в итоге длина перестановки совпадёт
+# с длиной искомой строки.
+
+from collections import Counter, defaultdict
 
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        search_cntr = Counter(s1)
-        substr_cntr = Counter(s2[0:len(s1)])
-        if substr_cntr == search_cntr:
-            return True
-
-        for i in range(1, len(s2) - len(s1) + 1):
-            substr_cntr[s2[i - 1]] -= 1
-            substr_cntr[s2[i + len(s1) - 1]] += 1
-            if substr_cntr == search_cntr:
-                return True
+        source_counter = Counter(s1)
+        curr_counter = defaultdict(int)
+        left = 0
+        total_lets = 0
+        for right, let in enumerate(s2):
+            # Нужная буква, счётчик
+            if let in source_counter:
+                # Перебор, выкидываем левые буквы, пока не устраним перебор
+                while curr_counter[let] == source_counter[let]:
+                    curr_counter[s2[left]] -= 1
+                    total_lets -= 1
+                    left += 1
+                # Добавляем текущую
+                curr_counter[let] += 1
+                total_lets += 1
+                # Заканчиваем по счётчику букв
+                if total_lets == len(s1):
+                    return True
+            # Не нужная, сброс, начинаем заново
+            else:
+                curr_counter.clear()
+                # Перескакиваем текущую лишнюю
+                left = right + 1
+                total_lets = 0
         return False
 
-
-examples = [
+cases = [
     (['ab', 'eidbaooo'], True),
     (['ab', 'eidboaoo'], False),
     (['a', 'bbb'], False),
     (['getf', 'badfetgethf'], True),
+    (["ab", "aaaab"], True),
+    (["cba", "abc"], True),
+    (["cbaa", "abccacba"], True)
 ]
-
 sol = Solution()
-for inp, ans in examples:
-    out = sol.checkInclusion(*inp)
-    print(inp, out, ans)
+for inp, ans in cases:
+    res = sol.checkInclusion(*inp)
+    print(inp, res, ans)
