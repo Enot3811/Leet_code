@@ -22,3 +22,5 @@
 - Просто лёгкая задача (Easy task)
 - Матрицы (Matrix)
 - Два указателя (read/write pointers)
+- Двоичное дерево (binary tree)
+- Префиксные суммы (prefix sums)
