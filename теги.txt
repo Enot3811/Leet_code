@@ -24,3 +24,4 @@
 - Два указателя (read/write pointers)
 - Двоичное дерево (binary tree)
 - Префиксные суммы (prefix sums)
+- Дерево отрезков (segment tree)
