@@ -1,4 +1,4 @@
-"""Convert Sorted Array to Binary Search Tree.
+"""108. Convert Sorted Array to Binary Search Tree.
 
 Given an integer array nums where the elements are sorted in ascending order, convert it to a 
 height-balanced binary search tree.
@@ -14,16 +14,24 @@ Output: [3,1]
 Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 
 Constraints:
-
 1 <= nums.length <= 10**4
 -10**4 <= nums[i] <= 10**4
 nums is sorted in a strictly increasing order.
 """
 
+# Теги
+# Двоичное дерево (binary tree)
+
+# Размышления
+# Задача на внимательность.
+# В бинарном дереве все числа, что слева, меньше корня. А те, что справа - больше.
+# И по сути нам неважно, как они внутри расположены,
+# они так или иначе меньше или больше.
+# Вот и сделаем так: возьмём центр массива. Все что слева - материал для левой ветки.
+# Что справа - для правой. И рекурсивно строим узлы.
+
 from typing import List, Optional
 
-
-# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
