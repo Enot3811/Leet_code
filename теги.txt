@@ -8,6 +8,7 @@
 - Продолжение задачи
 - merge sort
 - Поиск в глубину (dfs)
+- Рекурсия (recursion)
 - Связанный список (Linked list)
 - Стек (stack)
 - Быстрый и медленный указатель (fast and slow pointer)
